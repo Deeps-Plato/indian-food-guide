@@ -17,7 +17,7 @@ window.SPICES_DATA = [
     typicalAmount: '½–1 tsp per dish',
     beginnerTip: 'Add turmeric early with oil — heat activates its color and flavor. It stains everything, so be careful! A little goes a long way; too much makes food bitter.',
     uses: ['Curries', 'Dal', 'Rice', 'Marinades', 'Golden milk', 'Pickles'],
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Turmeric_inflorescence.jpg/800px-Turmeric_inflorescence.jpg'
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Turmeric-powder.jpg/800px-Turmeric-powder.jpg'
   },
   {
     id: 'cumin-seeds',
@@ -34,7 +34,7 @@ window.SPICES_DATA = [
     typicalAmount: '1 tsp for tempering',
     beginnerTip: 'When cumin seeds hit hot oil, they should sizzle within 5 seconds. If they take longer, the oil isn\'t hot enough. If they burn immediately, reduce heat. They\'re ready when they turn a shade darker and smell nutty.',
     uses: ['Tempering (tadka)', 'Rice', 'Raita', 'Dal', 'Cumin water'],
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Cuminum_cyminum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-198.jpg/800px-Cuminum_cyminum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-198.jpg'
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Cumin.JPG/800px-Cumin.JPG'
   },
   {
     id: 'coriander',
@@ -51,7 +51,7 @@ window.SPICES_DATA = [
     typicalAmount: '1–2 tsp ground per dish',
     beginnerTip: 'Coriander powder is very forgiving — it\'s hard to use too much. It works as a thickener and adds body to gravies. Toasting whole seeds before grinding gives a much more complex flavor.',
     uses: ['Curries', 'Marinades', 'Chutneys', 'Spice blends', 'Pickles'],
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Coriandrum_sativum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-193.jpg/800px-Coriandrum_sativum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-193.jpg'
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Coriander_Seeds.jpg/800px-Coriander_Seeds.jpg'
   },
   {
     id: 'green-cardamom',
@@ -119,7 +119,7 @@ window.SPICES_DATA = [
     typicalAmount: '¼–1 tsp (start with ¼ tsp if new)',
     beginnerTip: 'Indian red chili powder is much hotter than American chili powder. If you can\'t find it, use cayenne pepper at half the quantity. Beginners: start with ¼ tsp and taste as you go. The heat is in the seeds and veins of the dried chili.',
     uses: ['Curries', 'Marinades', 'Chutneys', 'Tandoori dishes', 'Pickles'],
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Madame_Jeanette_and_other_chillies.jpg/800px-Madame_Jeanette_and_other_chillies.jpg'
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/BolivianChilePowder2.JPG/800px-BolivianChilePowder2.JPG'
   },
   {
     id: 'kashmiri-chili',
@@ -136,7 +136,7 @@ window.SPICES_DATA = [
     typicalAmount: '1–2 tsp for color',
     beginnerTip: 'This is your best friend as a beginner! Use Kashmiri chili powder to get that gorgeous red restaurant color. You can use 2–3 tsp without making your food too hot. Substitute: mix ¾ paprika + ¼ cayenne.',
     uses: ['Butter chicken', 'Tandoori dishes', 'Rogan josh', 'Color agent'],
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Kashmiri_cuisine_waazwan.jpg/800px-Kashmiri_cuisine_waazwan.jpg'
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Andhra_Chillies.jpg/800px-Andhra_Chillies.jpg'
   },
   {
     id: 'mustard-seeds',
@@ -170,7 +170,7 @@ window.SPICES_DATA = [
     typicalAmount: '¼–½ tsp (very small amounts)',
     beginnerTip: 'Use sparingly! Fenugreek seeds become very bitter if overused or burned. Just a small pinch can transform a dish. They\'re great for pickling and give a distinctive flavor to aloo methi (potatoes with fenugreek).',
     uses: ['Pickles', 'Dal', 'Potato dishes', 'Spice blends', 'Tempering'],
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Illustration_Trigonella_foenum-graecum0_clean.jpg/800px-Illustration_Trigonella_foenum-graecum0_clean.jpg'
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/2017_0102_fenugreek_seeds.jpg/800px-2017_0102_fenugreek_seeds.jpg'
   },
   {
     id: 'kasuri-methi',
@@ -187,7 +187,7 @@ window.SPICES_DATA = [
     typicalAmount: '1–2 tbsp, crumbled',
     beginnerTip: 'Rub kasuri methi between your palms before adding to the dish — this releases the essential oils and intensifies the flavor. Add in the last few minutes of cooking. This is the ingredient that makes your curry taste like a restaurant.',
     uses: ['Butter chicken', 'Palak paneer', 'Dal', 'Paratha', 'Curries'],
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Illustration_Trigonella_foenum-graecum0_clean.jpg/800px-Illustration_Trigonella_foenum-graecum0_clean.jpg'
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Aesthetic_bunch_of_fenugreek_greens.jpg/800px-Aesthetic_bunch_of_fenugreek_greens.jpg'
   },
   {
     id: 'asafoetida',
@@ -204,7 +204,7 @@ window.SPICES_DATA = [
     typicalAmount: 'Tiny pinch (⅛ tsp)',
     beginnerTip: 'Store in a very airtight container — the smell will permeate everything in your spice cabinet. Add directly to hot oil before other ingredients. Only use a tiny amount (⅛ tsp). The smell in the jar is deceptive; it becomes wonderful in cooked food.',
     uses: ['Dal tadka', 'Vegetable curries', 'Pickles', 'Jain recipes'],
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Asa_foetida_Kaempfer.jpg/800px-Asa_foetida_Kaempfer.jpg'
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Asafoetida.jpg/800px-Asafoetida.jpg'
   },
   {
     id: 'bay-leaves',
@@ -255,7 +255,7 @@ window.SPICES_DATA = [
     typicalAmount: '2–4 whole cloves',
     beginnerTip: 'Use sparingly! Cloves are very strong. 3–4 whole cloves are enough for a pot of curry. They\'re usually removed before eating (or guests know to avoid them). Ground cloves are used in tiny amounts (⅛ tsp) in garam masala.',
     uses: ['Biryani', 'Garam masala', 'Chai', 'Meat curries', 'Pilaf'],
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Syzygium_aromaticum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-030.jpg/800px-Syzygium_aromaticum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-030.jpg'
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/ClovesDried.jpg/800px-ClovesDried.jpg'
   },
   {
     id: 'fennel-seeds',
@@ -272,7 +272,7 @@ window.SPICES_DATA = [
     typicalAmount: '½–1 tsp',
     beginnerTip: 'Don\'t confuse with cumin seeds — taste them to tell apart. Fennel is sweet and licorice-like, cumin is earthy and savory. Fennel seeds are excellent for tempering fish dishes and Bengali cooking. Chew them after meals for freshness!',
     uses: ['Fish curries', 'Rogan josh', 'Panch phoron', 'After-meal digestive', 'Pickles'],
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Foeniculum_July_2011-1a.jpg/800px-Foeniculum_July_2011-1a.jpg'
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Fennel_seed.jpg/800px-Fennel_seed.jpg'
   },
   {
     id: 'curry-leaves',
@@ -289,7 +289,7 @@ window.SPICES_DATA = [
     typicalAmount: '8–12 fresh leaves',
     beginnerTip: 'Fresh is dramatically better than dried. Look for them at Indian or South Asian grocery stores. Freeze extras — frozen curry leaves work almost as well as fresh. They\'re edible but most people don\'t eat them (like bay leaves).',
     uses: ['South Indian curries', 'Dal', 'Coconut chutney', 'Tempering', 'Rasam'],
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Curry_Trees.jpg/800px-Curry_Trees.jpg'
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Fresh_curry_Leaf_(49697684423).jpg/800px-Fresh_curry_Leaf_(49697684423).jpg'
   },
   {
     id: 'black-pepper',
@@ -306,7 +306,7 @@ window.SPICES_DATA = [
     typicalAmount: '½–1 tsp ground, or whole for tempering',
     beginnerTip: 'Black pepper provides a different kind of heat than chili — it\'s more immediate and fades quickly. Using whole peppercorns in tempering and then adding ground pepper later gives you layers of heat. Pepper loses potency quickly once ground, so a pepper grinder is worth having.',
     uses: ['Garam masala', 'Rasam', 'Pepper chicken', 'Marinades', 'All cooking'],
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Piper_nigrum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-107.jpg/800px-Piper_nigrum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-107.jpg'
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Dried_Peppercorns.jpg/800px-Dried_Peppercorns.jpg'
   },
   {
     id: 'saffron',
@@ -374,6 +374,6 @@ window.SPICES_DATA = [
     typicalAmount: '1–2 whole pods',
     beginnerTip: 'Star anise is very strong — 1–2 pods is enough for a large pot. Always remove before serving. When ground, use only a small pinch. It\'s what gives certain biryanis that distinctive deep, aromatic flavor.',
     uses: ['Biryani', 'Meat curries', 'Spiced chai', 'Slow-cooked dishes'],
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Illicium_verum_1zz.jpg/800px-Illicium_verum_1zz.jpg'
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Dried_Star_Anise_Fruit_Seeds.jpg/800px-Dried_Star_Anise_Fruit_Seeds.jpg'
   }
 ];
