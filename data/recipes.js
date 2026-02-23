@@ -70,7 +70,7 @@ window.RECIPES_DATA = [
     ],
     serving: 'Serve with steamed basmati rice for a complete meal. Also wonderful with hot roti or naan. A side of mango pickle and a dollop of yogurt complete the meal.',
     spicesUsed: ['turmeric', 'cumin-seeds', 'asafoetida', 'red-chili-powder'],
-    image: null
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/3_types_of_lentil.png/800px-3_types_of_lentil.png'
   },
   {
     id: 'palak-paneer',
@@ -138,7 +138,7 @@ window.RECIPES_DATA = [
     ],
     serving: 'Serve with naan, roti, or paratha. A side of sliced onion with lemon juice is traditional. Works beautifully with jeera rice (cumin rice) as well.',
     spicesUsed: ['cumin-seeds', 'turmeric', 'coriander', 'red-chili-powder', 'garam-masala', 'kasuri-methi'],
-    image: null
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Palakpaneer_Rayagada_Odisha_0009.jpg/800px-Palakpaneer_Rayagada_Odisha_0009.jpg'
   },
   {
     id: 'chana-masala',
@@ -206,7 +206,7 @@ window.RECIPES_DATA = [
     ],
     serving: 'Traditionally served with bhature (deep-fried bread) or kulcha. Also excellent with rice or roti. Add sliced raw onion, cilantro, and a squeeze of lemon on the side.',
     spicesUsed: ['cumin-seeds', 'turmeric', 'coriander', 'red-chili-powder', 'garam-masala', 'amchur'],
-    image: null
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Chana_masala.jpg/800px-Chana_masala.jpg'
   },
   {
     id: 'aloo-gobi',
@@ -273,7 +273,7 @@ window.RECIPES_DATA = [
     ],
     serving: 'Serve as a side dish with roti or paratha and dal. Also delicious stuffed into paratha (aloo gobi paratha). A classic North Indian thali includes aloo gobi, dal, roti, and rice.',
     spicesUsed: ['cumin-seeds', 'turmeric', 'coriander', 'red-chili-powder', 'amchur', 'garam-masala'],
-    image: null
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Aloo_Ghobi.jpg/800px-Aloo_Ghobi.jpg'
   },
   {
     id: 'rajma',
@@ -319,7 +319,7 @@ window.RECIPES_DATA = [
     ],
     serving: 'The definitive pairing is with steamed basmati rice (rajma-chawal). A spoonful of ghee on top, sliced onion with lemon, and green chili pickle on the side completes the meal.',
     spicesUsed: ['cumin-seeds', 'turmeric', 'coriander', 'red-chili-powder', 'garam-masala'],
-    image: null
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Rajma_Masala_%2832081557778%29.jpg/800px-Rajma_Masala_%2832081557778%29.jpg'
   },
   {
     id: 'matar-paneer',
@@ -358,7 +358,7 @@ window.RECIPES_DATA = [
     tips: ['Fry paneer cubes in oil until golden before adding for better texture.', 'Frozen peas are perfectly fine — they\'re actually often sweeter than fresh.', 'For a smoother gravy, blend the onion before cooking.'],
     serving: 'Serve with naan, roti, or rice. A squeeze of lemon over the finished dish brightens the flavors.',
     spicesUsed: ['turmeric', 'coriander', 'red-chili-powder', 'garam-masala'],
-    image: null
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Matar_paneer_dish.jpg/800px-Matar_paneer_dish.jpg'
   },
   {
     id: 'dal-makhani',
@@ -405,7 +405,7 @@ window.RECIPES_DATA = [
     ],
     serving: 'Serve with naan (butter naan is perfect here), a drizzle of cream, and a knob of butter on top. Rice works too. This dish is very rich — a little goes a long way.',
     spicesUsed: ['turmeric', 'red-chili-powder', 'coriander', 'garam-masala'],
-    image: null
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Punjabi_style_Dal_Makhani.jpg/800px-Punjabi_style_Dal_Makhani.jpg'
   },
   {
     id: 'bhindi-masala',
@@ -442,7 +442,7 @@ window.RECIPES_DATA = [
     tips: ['DRY okra is the single most important tip — pat it completely dry.', 'High heat prevents sliminess. Low heat makes it slimy.', 'Cook in a single layer and don\'t stir too often.', 'A squeeze of lemon at the end brightens everything.'],
     serving: 'Serve with roti or paratha. Also works as a side with dal and rice.',
     spicesUsed: ['cumin-seeds', 'turmeric', 'coriander', 'red-chili-powder', 'amchur'],
-    image: null
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Hong_Kong_Okra_Aug_25_2012.JPG/800px-Hong_Kong_Okra_Aug_25_2012.JPG'
   },
   {
     id: 'baingan-bharta',
@@ -481,7 +481,7 @@ window.RECIPES_DATA = [
     tips: ['The flame charring is mandatory — it\'s the only source of the smoky flavor.', 'If using a broiler, broil on high with the oven door slightly open, turning frequently.', 'A little mustard oil in the final drizzle is traditional in North India.', 'The dish should taste smoky. If it doesn\'t, the eggplant wasn\'t charred enough.'],
     serving: 'Serve with roti or makki di roti (cornmeal flatbread). A traditional accompaniment is sarson ka saag (mustard greens). Also wonderful with rice.',
     spicesUsed: ['turmeric', 'red-chili-powder', 'coriander', 'garam-masala'],
-    image: null
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Baigan_Bharta_from_Nagpur.JPG/800px-Baigan_Bharta_from_Nagpur.JPG'
   },
   {
     id: 'aloo-paratha',
@@ -522,7 +522,7 @@ window.RECIPES_DATA = [
     tips: ['Potato filling must be completely smooth — any lumps will tear the bread.', 'Don\'t roll too thin or the bread tears. A bit thicker than a tortilla is right.', 'Cook on a very hot griddle — medium heat makes them dry, not crispy.', 'Practice makes perfect with rolling — the first few will be imperfect.'],
     serving: 'The traditional accompaniments are yogurt (dahi), salted butter, and achaar (pickle). A glass of lassi on the side completes the Punjabi breakfast experience.',
     spicesUsed: ['cumin-seeds', 'red-chili-powder', 'amchur'],
-    image: null
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Alooparatha.jpg/800px-Alooparatha.jpg'
   },
 
   /* ══════════════════════════════════════════════
@@ -605,7 +605,7 @@ window.RECIPES_DATA = [
     ],
     serving: 'The classic pairing is with garlic naan or butter naan. Steamed basmati rice also works beautifully. A simple onion salad with lemon and a drizzle of cream on the curry before serving looks beautiful.',
     spicesUsed: ['kashmiri-chili', 'turmeric', 'garam-masala', 'coriander', 'kasuri-methi'],
-    image: null
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Butter_Chicken_%26_Butter_Naan_-_Home_-_Chandigarh_-_India_-_0006.jpg/800px-Butter_Chicken_%26_Butter_Naan_-_Home_-_Chandigarh_-_India_-_0006.jpg'
   },
   {
     id: 'chicken-tikka-masala',
@@ -654,7 +654,7 @@ window.RECIPES_DATA = [
     tips: ['Longer marinating time = more flavorful chicken.', 'The char on the chicken is essential — don\'t just poach it in the sauce.', 'This is slightly spicier and more complex than butter chicken.', 'Kasuri methi makes an enormous difference to the final flavor.'],
     serving: 'Serve with naan or rice. A side of cucumber raita cuts the richness.',
     spicesUsed: ['red-chili-powder', 'kashmiri-chili', 'coriander', 'garam-masala', 'kasuri-methi', 'cumin-seeds'],
-    image: null
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Chicken_tikka_masala_%28cropped%29.jpg/800px-Chicken_tikka_masala_%28cropped%29.jpg'
   },
   {
     id: 'basic-chicken-curry',
@@ -695,7 +695,7 @@ window.RECIPES_DATA = [
     tips: ['Brown onions are the flavor foundation — don\'t skip proper cooking time.', 'The oil separating from the masala tells you the tomatoes are fully cooked.', 'Bone-in chicken has more flavor but takes longer to cook.', 'This basic technique works with lamb, shrimp, or any protein.'],
     serving: 'Serve with steamed basmati rice or roti. Excellent with a side of raita to cool things down.',
     spicesUsed: ['cumin-seeds', 'turmeric', 'coriander', 'red-chili-powder', 'garam-masala'],
-    image: null
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Taj_Mahal_-_Lamb_Curry_Madras.jpg/800px-Taj_Mahal_-_Lamb_Curry_Madras.jpg'
   },
   {
     id: 'lamb-rogan-josh',
@@ -741,7 +741,7 @@ window.RECIPES_DATA = [
     tips: ['Bone-in lamb is mandatory here — the marrow enriches the sauce.', 'Add yogurt slowly and off high heat to prevent curdling.', 'Fennel seeds/powder is a distinctly Kashmiri ingredient — don\'t substitute.', 'This is even better the next day; reheat gently.'],
     serving: 'Serve with steamed basmati rice or naan. A cucumber raita is a traditional accompaniment. Also served with sheermal (saffron flatbread) in Kashmiri cuisine.',
     spicesUsed: ['kashmiri-chili', 'coriander', 'turmeric', 'fennel-seeds', 'garam-masala', 'green-cardamom', 'black-cardamom', 'bay-leaves', 'cinnamon', 'cloves', 'black-pepper'],
-    image: null
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Rogan_Josh_Kashmiri.jpg/800px-Rogan_Josh_Kashmiri.jpg'
   },
   {
     id: 'chicken-biryani',
@@ -804,7 +804,7 @@ window.RECIPES_DATA = [
     ],
     serving: 'Serve with raita (cucumber yogurt), mirchi ka salan (chili curry), and a boiled egg cut in half. Use a large spoon to serve, scooping from the bottom up to get both rice and chicken in each serving.',
     spicesUsed: ['saffron', 'green-cardamom', 'black-cardamom', 'cinnamon', 'cloves', 'bay-leaves', 'cumin-seeds', 'garam-masala', 'turmeric'],
-    image: null
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/%22Hyderabadi_Dum_Biryani%22.jpg/800px-%22Hyderabadi_Dum_Biryani%22.jpg'
   },
   {
     id: 'keema-matar',
@@ -844,7 +844,7 @@ window.RECIPES_DATA = [
     tips: ['Break meat into very fine pieces while cooking — no large clumps.', 'Drain excess fat from lamb keema if there\'s a lot.', 'Add a beaten egg at the end (with lid on, just turn off heat) for a richer version.', 'Great stuffed into parathas or pitas.'],
     serving: 'Serve with roti or rice. Also excellent as a filling for stuffed parathas or samosas.',
     spicesUsed: ['cumin-seeds', 'turmeric', 'coriander', 'red-chili-powder', 'garam-masala'],
-    image: null
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Keema_Matar_%28a_dish_from_India%29.jpg/800px-Keema_Matar_%28a_dish_from_India%29.jpg'
   },
   {
     id: 'lamb-korma',
@@ -892,7 +892,7 @@ window.RECIPES_DATA = [
     tips: ['Nut paste is what gives korma its distinctive richness — don\'t skip.', 'Add yogurt very slowly on low heat to prevent curdling.', 'Rose water (1 tsp) added at the end is traditional in Mughlai korma.', 'This is meant to be mild — it\'s about richness and aromatics, not chili heat.'],
     serving: 'Serve with fragrant basmati rice or naan. Garnish with the reserved fried onions, a few soaked saffron threads, and chopped pistachios.',
     spicesUsed: ['green-cardamom', 'cinnamon', 'cloves', 'bay-leaves', 'coriander', 'garam-masala', 'saffron', 'black-pepper'],
-    image: null
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Chicken_Korma.JPG/800px-Chicken_Korma.JPG'
   },
   {
     id: 'tandoori-chicken',
@@ -936,6 +936,6 @@ window.RECIPES_DATA = [
     tips: ['Deep scoring is the most critical step — shallow cuts won\'t let the marinade reach the bone.', 'Overnight marinating is the difference between good and great.', 'Maximum oven temperature is essential — 375°F won\'t give you proper tandoori char.', 'The broiler at the end creates the char that defines tandoori.', 'Red food coloring is never needed — Kashmiri chili gives natural deep color.'],
     serving: 'Serve on a platter with sliced raw onion (separated into rings), lemon halves, and green mint chutney for dipping. Naan on the side. This is classic as a starter before a main curry.',
     spicesUsed: ['kashmiri-chili', 'cumin-seeds', 'coriander', 'garam-masala', 'turmeric'],
-    image: null
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Chickentandoori.jpg/800px-Chickentandoori.jpg'
   }
 ];

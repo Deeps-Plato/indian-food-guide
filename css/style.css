@@ -694,25 +694,44 @@ p:last-child { margin-bottom: 0; }
   margin-top: 1px;
 }
 
-.spices-used {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+.spices-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(68px, 1fr));
+  gap: 10px;
   margin-top: 12px;
 }
-.spice-chip {
-  background: white;
-  border: 1px solid var(--border);
-  border-radius: var(--radius-pill);
-  padding: 5px 12px;
-  font-size: 0.82rem;
-  color: var(--brown);
-  transition: all var(--transition);
+.spice-photo-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  border-radius: var(--radius);
+  transition: transform var(--transition);
 }
-.spice-chip:hover {
-  background: var(--saffron);
-  border-color: var(--saffron);
-  color: white;
+.spice-photo-tile:hover { transform: translateY(-3px); }
+.spice-photo-tile-img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+}
+.spice-photo-tile-fallback {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+}
+.spice-photo-tile-name {
+  font-size: 0.67rem;
+  text-align: center;
+  color: var(--brown);
+  margin-top: 5px;
+  line-height: 1.3;
+  font-weight: 500;
 }
 
 /* ── How-to Steps ── */
@@ -881,7 +900,7 @@ p:last-child { margin-bottom: 0; }
 /* ── Print styles ── */
 @media print {
   .nav, .filter-bar, .recipe-hero, .tips-section,
-  .spices-used, .footer, .btn { display: none !important; }
+  .spices-photo-grid, .footer, .btn { display: none !important; }
   body { background: white; color: black; font-size: 12pt; }
   .recipe-layout { grid-template-columns: 1fr; }
   .recipe-ingredients { position: static; border: 1px solid #ccc; }

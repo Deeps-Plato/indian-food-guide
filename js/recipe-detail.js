@@ -155,13 +155,22 @@ document.addEventListener('DOMContentLoaded', () => {
     servingEl.textContent = recipe.serving;
   }
 
-  /* ── Spices used ── */
+  /* ── Spices used — photo grid ── */
   const spicesEl = document.getElementById('spices-used');
   if (spicesEl && recipe.spicesUsed && recipe.spicesUsed.length) {
     spicesEl.innerHTML = recipe.spicesUsed.map(sid => {
       const spice = window.SPICES_DATA && window.SPICES_DATA.find(s => s.id === sid);
-      const label = spice ? spice.name : sid;
-      return `<a href="spices.html" class="spice-chip">${label}</a>`;
+      const label    = spice ? spice.name     : sid;
+      const emoji    = spice ? spice.emoji    : '🌿';
+      const gradient = spice ? spice.gradient : 'linear-gradient(135deg, #FDE68A, #F59E0B)';
+      const imgHtml  = spice && spice.image
+        ? `<img class="spice-photo-tile-img" src="${spice.image}" alt="${label}" loading="lazy">`
+        : `<div class="spice-photo-tile-fallback" style="background:${gradient}">${emoji}</div>`;
+      return `
+        <a href="spices.html" class="spice-photo-tile" title="${label}">
+          ${imgHtml}
+          <div class="spice-photo-tile-name">${label}</div>
+        </a>`;
     }).join('');
   }
 
