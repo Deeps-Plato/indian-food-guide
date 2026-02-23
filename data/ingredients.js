@@ -15,7 +15,7 @@ window.INGREDIENTS_DATA = [
     beginnerTip: 'Start with store-bought ghee (Purity or Amul brands are great). Use just 1–2 tablespoons — it\'s rich. Drizzle a little ghee on hot dal and rice right before eating; it\'s a transformative experience.',
     storage: 'Room temperature up to 3 months, refrigerated up to 1 year.',
     substitute: 'Butter (less flavorful, lower smoke point) or neutral oil',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Home_made_Ghee.jpg/800px-Home_made_Ghee.jpg'
+    image: 'images/ingredients/ghee.jpg'
   },
   {
     id: 'paneer',
@@ -30,7 +30,7 @@ window.INGREDIENTS_DATA = [
     beginnerTip: 'Don\'t overcook paneer — it gets rubbery. Add to the sauce in the last 5–8 minutes. For better texture, fry paneer cubes in a little oil or ghee first until golden, then add to curry.',
     storage: 'Refrigerate in water for up to 1 week. Freeze for 3 months.',
     substitute: 'Firm tofu (similar texture, milder taste)',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Panir_Paneer_Indian_cheese_fresh.jpg/800px-Panir_Paneer_Indian_cheese_fresh.jpg'
+    image: 'images/ingredients/paneer.jpg'
   },
   {
     id: 'basmati-rice',
@@ -45,7 +45,7 @@ window.INGREDIENTS_DATA = [
     beginnerTip: 'Rinse rice 2–3 times until water runs clear, then soak for 30 minutes. Use a 1:1.5 ratio (rice:water). This removes excess starch and ensures fluffy, separate grains. Never lift the lid while steaming!',
     storage: 'Airtight container indefinitely. Cooked rice refrigerates 3–4 days.',
     substitute: 'Jasmine rice (closer) or any long-grain rice',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Khyma_and_Basmati_rice.jpg/800px-Khyma_and_Basmati_rice.jpg'
+    image: 'images/ingredients/basmati-rice.jpg'
   },
   {
     id: 'toor-dal',
@@ -60,7 +60,7 @@ window.INGREDIENTS_DATA = [
     beginnerTip: 'Pressure cook toor dal for 3–4 whistles or simmer covered for 25–30 minutes until completely soft. Mash it roughly with the back of a spoon — a slightly textured consistency is traditional. Don\'t skip the tempering (tadka) at the end, it\'s the most important step.',
     storage: 'Dried lasts indefinitely. Cooked refrigerates 3–4 days.',
     substitute: 'Chana dal (slightly different flavor) or red lentils',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Cajanus_cajan_Blanco1.167-cropped.jpg/800px-Cajanus_cajan_Blanco1.167-cropped.jpg'
+    image: 'images/ingredients/toor-dal.jpg'
   },
   {
     id: 'chana-dal',
@@ -75,7 +75,7 @@ window.INGREDIENTS_DATA = [
     beginnerTip: 'Chana dal takes longer to cook than other dals — always soak for at least 30 minutes. They should be tender but still hold their shape (unlike toor dal which is fully mashed). A pressure cooker is very helpful here.',
     storage: 'Dried lasts indefinitely. Cooked refrigerates 3–4 days.',
     substitute: 'Yellow split peas (closest Western substitute)',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Chickpea_BNC.jpg/800px-Chickpea_BNC.jpg'
+    image: 'images/ingredients/chana-dal.jpg'
   },
   {
     id: 'masoor-dal',
@@ -90,7 +90,7 @@ window.INGREDIENTS_DATA = [
     beginnerTip: 'The easiest dal to start with — no soaking needed, cooks fast, and is forgiving. Rinse and simmer with water, turmeric, and salt for 20 minutes. Then add a tempering (tadka) of ghee, cumin, and spices. Done!',
     storage: 'Dried lasts indefinitely. Cooked refrigerates 3–4 days.',
     substitute: 'Red lentils (same thing) — widely available',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/3_types_of_lentil.png/800px-3_types_of_lentil.png'
+    image: 'images/ingredients/masoor-dal.png'
   },
   {
     id: 'urad-dal',
@@ -105,7 +105,7 @@ window.INGREDIENTS_DATA = [
     beginnerTip: 'For dal makhani, use whole black urad dal — soak overnight and slow cook. The black skin is where most of the flavor is. For South Indian dishes like idli, use the white split version. These are very different ingredients despite sharing a name.',
     storage: 'Dried lasts indefinitely. Cooked refrigerates 3–4 days.',
     substitute: 'No close substitute; black beans are very different',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Black_gram.jpg/800px-Black_gram.jpg'
+    image: 'images/ingredients/urad-dal.jpg'
   },
   {
     id: 'chickpeas',
@@ -120,7 +120,7 @@ window.INGREDIENTS_DATA = [
     beginnerTip: 'Canned chickpeas are perfectly fine (drain and rinse them). For dried chickpeas: soak overnight, then simmer 1–1.5 hours or pressure cook 4–5 whistles. Tea bags during cooking make the skin darker and more flavorful (as in restaurant chana masala).',
     storage: 'Dried indefinitely. Canned 3–5 years. Cooked refrigerates 5 days.',
     substitute: 'Kidney beans in some recipes (different texture)',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Chickpea_BNC.jpg/800px-Chickpea_BNC.jpg'
+    image: 'images/ingredients/chickpeas.jpg'
   },
   {
     id: 'kidney-beans',
@@ -135,7 +135,7 @@ window.INGREDIENTS_DATA = [
     beginnerTip: 'Always boil kidney beans vigorously for 10 minutes before slow simmering — they contain a toxin (lectin) that is destroyed by boiling. If using canned, they\'re safe (already cooked). Soak dried beans overnight to reduce cooking time.',
     storage: 'Dried indefinitely. Canned 3–5 years. Cooked refrigerates 4–5 days.',
     substitute: 'Pinto beans (similar flavor, lighter color)',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Red_Rajma_BNC.jpg/800px-Red_Rajma_BNC.jpg'
+    image: 'images/ingredients/kidney-beans.jpg'
   },
   {
     id: 'atta',
@@ -150,7 +150,7 @@ window.INGREDIENTS_DATA = [
     beginnerTip: 'The secret to soft roti is resting the dough for at least 30 minutes after kneading. The dough should be soft and slightly tacky — softer than you think. Cook on a very hot dry skillet and press gently with a cloth in the last 30 seconds to puff it up.',
     storage: 'Airtight container 3–6 months; refrigerate in hot climates.',
     substitute: 'Whole wheat flour (slightly coarser texture) or chapati flour',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Atta_flour.jpg/800px-Atta_flour.jpg'
+    image: 'images/ingredients/atta.jpg'
   },
   {
     id: 'besan',
@@ -165,7 +165,7 @@ window.INGREDIENTS_DATA = [
     beginnerTip: 'Besan must be fully cooked or it tastes raw and bitter. When making kadhi, simmer for at least 20–25 minutes, stirring regularly. For pakora batter, add cold water gradually until you get a thick, coating consistency.',
     storage: 'Airtight container 3–6 months in a cool place.',
     substitute: 'No perfect substitute; garbanzo bean flour is the same thing',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Gram_flour_AvL.jpg/800px-Gram_flour_AvL.jpg'
+    image: 'images/ingredients/besan.jpg'
   },
   {
     id: 'tamarind',
@@ -180,7 +180,7 @@ window.INGREDIENTS_DATA = [
     beginnerTip: 'The easiest form is tamarind concentrate (in a jar) — just add ½–1 tsp dissolved in water. For the block form, break off a small piece, soak in ½ cup hot water for 15 minutes, then squeeze out the paste and discard seeds. The concentrate is much easier for beginners.',
     storage: 'Block: 6+ months at room temperature. Concentrate: refrigerate after opening.',
     substitute: 'Amchur powder + lemon juice, or lime juice (different flavor)',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Tamarindus_indica_pods.JPG/800px-Tamarindus_indica_pods.JPG'
+    image: 'images/ingredients/tamarind.jpg'
   },
   {
     id: 'yogurt',
@@ -195,7 +195,7 @@ window.INGREDIENTS_DATA = [
     beginnerTip: 'Always use full-fat yogurt — low-fat splits when heated. When adding yogurt to a hot curry, remove the pan from heat, stir in room-temperature yogurt, then return to low heat and stir constantly. Never add cold yogurt to boiling curry.',
     storage: 'Refrigerate 1–2 weeks. Bring to room temp before adding to hot food.',
     substitute: 'Sour cream (in marinades) or coconut milk (in curries)',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Curd_in_a_traditional_Manipuri_earthen_pot.JPG/800px-Curd_in_a_traditional_Manipuri_earthen_pot.JPG'
+    image: 'images/ingredients/yogurt.jpg'
   },
   {
     id: 'coconut-milk',
@@ -210,7 +210,7 @@ window.INGREDIENTS_DATA = [
     beginnerTip: 'Shake the can well before opening — coconut cream separates and settles. Use full-fat for cooking; light coconut milk makes thin curries. Add coconut milk at the end and simmer on low heat — boiling can cause it to curdle.',
     storage: 'Unopened: 2+ years. Opened: refrigerate and use within 4 days.',
     substitute: 'Cashew cream (soak cashews, blend smooth) or heavy cream',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Cononut_milk.JPG/800px-Cononut_milk.JPG'
+    image: 'images/ingredients/coconut-milk.jpg'
   },
   {
     id: 'ginger',
@@ -225,7 +225,7 @@ window.INGREDIENTS_DATA = [
     beginnerTip: 'Equal parts ginger and garlic blend into a paste that forms the base of most North Indian curries. Store-bought ginger-garlic paste is a perfectly fine shortcut! Peel ginger easily by scraping with a spoon rather than peeling with a knife.',
     storage: 'Refrigerate whole for 2–3 weeks. Freeze for 6 months (grate from frozen).',
     substitute: 'Ground ginger (use ¼ the amount — less complex)',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Koeh-146-no_text.jpg/800px-Koeh-146-no_text.jpg'
+    image: 'images/ingredients/ginger.jpg'
   },
   {
     id: 'garlic',
@@ -240,7 +240,7 @@ window.INGREDIENTS_DATA = [
     beginnerTip: 'Make a big batch of ginger-garlic paste (equal parts, blended with a little water) and refrigerate for up to 2 weeks or freeze in ice cube trays. Use 1 cube per dish. Cooking garlic in oil for a full minute before adding other ingredients ensures no raw garlic taste.',
     storage: 'Fresh heads: cool dry place 1 month. Peeled cloves: refrigerate 1 week.',
     substitute: 'Store-bought garlic paste or jarred minced garlic',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Single_clove_garlic.jpg/800px-Single_clove_garlic.jpg'
+    image: 'images/ingredients/garlic.jpg'
   },
   {
     id: 'cilantro',
@@ -255,6 +255,6 @@ window.INGREDIENTS_DATA = [
     beginnerTip: 'Store cilantro with stems in a glass of water in the fridge, covered loosely with a bag — lasts 1–2 weeks this way. Use the stems too (they\'re more flavorful in cooked dishes, leaves are better raw/garnish). If you\'re one of the people who finds cilantro soapy, try using less.',
     storage: 'Stems in water, refrigerated, up to 2 weeks.',
     substitute: 'Fresh parsley (much milder) + a little lime zest',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Coriandrum_sativum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-193.jpg/800px-Coriandrum_sativum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-193.jpg'
+    image: 'images/ingredients/cilantro.jpg'
   }
 ];
