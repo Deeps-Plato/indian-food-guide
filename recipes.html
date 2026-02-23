@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipes — Indian Food Guide</title>
+  <meta name="description" content="18 Indian recipes with beginner-friendly step-by-step instructions. Filter by vegetarian, meat, or difficulty level.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ── Navigation ── -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="nav-logo" href="index.html"><span>🍛</span> Indian Food Guide</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html"       class="nav-link">Home</a></li>
+      <li><a href="spices.html"      class="nav-link">Spices</a></li>
+      <li><a href="ingredients.html" class="nav-link">Ingredients</a></li>
+      <li><a href="recipes.html"     class="nav-link">Recipes</a></li>
+    </ul>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── Page Hero ── -->
+<div class="page-hero">
+  <div class="container">
+    <h1>📖 All Recipes</h1>
+    <p>18 recipes — 10 vegetarian, 8 meat — each with detailed beginner-friendly instructions.</p>
+  </div>
+</div>
+
+<!-- ── Main Content ── -->
+<main class="page-content">
+  <div class="container">
+
+    <!-- Filter Bar -->
+    <div class="filter-bar" style="flex-wrap:wrap;gap:16px">
+      <div class="search-wrap">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input
+          type="search"
+          id="recipe-search"
+          class="search-input"
+          placeholder="Search recipes…"
+          aria-label="Search recipes"
+        >
+      </div>
+
+      <div style="display:flex;gap:16px;flex-wrap:wrap">
+        <!-- Category filter -->
+        <div>
+          <div style="font-size:0.72rem;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--saffron);margin-bottom:6px">Type</div>
+          <div class="filter-pills" id="category-pills" role="group" aria-label="Filter by type">
+            <button class="pill active" data-value="all">All</button>
+            <button class="pill" data-value="vegetarian">🥦 Vegetarian</button>
+            <button class="pill" data-value="meat">🍗 Meat</button>
+          </div>
+        </div>
+
+        <!-- Difficulty filter -->
+        <div>
+          <div style="font-size:0.72rem;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--saffron);margin-bottom:6px">Difficulty</div>
+          <div class="filter-pills" id="difficulty-pills" role="group" aria-label="Filter by difficulty">
+            <button class="pill active" data-value="all">All</button>
+            <button class="pill" data-value="beginner">Beginner</button>
+            <button class="pill" data-value="intermediate">Intermediate</button>
+            <button class="pill" data-value="advanced">Advanced</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="results-count" id="results-count" aria-live="polite">18 recipes</div>
+
+    <!-- Recipe Grid -->
+    <div class="card-grid" id="recipe-grid" aria-label="Recipe cards">
+      <div class="empty-state" style="grid-column:1/-1">
+        <div class="empty-state-icon">⏳</div>
+        <p>Loading recipes…</p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<!-- ── Footer ── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">🍛 Indian Food Guide</div>
+        <div class="footer-tagline">A beginner-friendly reference for Indian cooking.</div>
+      </div>
+      <div>
+        <div class="footer-heading">Navigate</div>
+        <ul class="footer-links">
+          <li><a href="index.html"       class="footer-link">Home</a></li>
+          <li><a href="spices.html"      class="footer-link">Spices</a></li>
+          <li><a href="ingredients.html" class="footer-link">Ingredients</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Beginner Picks</div>
+        <ul class="footer-links">
+          <li><a href="recipe.html?id=dal-tadka"    class="footer-link">Dal Tadka</a></li>
+          <li><a href="recipe.html?id=aloo-gobi"    class="footer-link">Aloo Gobi</a></li>
+          <li><a href="recipe.html?id=butter-chicken" class="footer-link">Butter Chicken</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">Click a recipe card to see full instructions.</div>
+  </div>
+</footer>
+
+<script src="data/recipes.js"></script>
+<script src="js/app.js"></script>
+<script src="js/recipes-page.js"></script>
+</body>
+</html>

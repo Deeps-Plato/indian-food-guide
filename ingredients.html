@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Core Ingredients — Indian Food Guide</title>
+  <meta name="description" content="The 17 essential ingredients for Indian cooking — what they are, how to store them, and what to substitute when you can't find them.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ── Navigation ── -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="nav-logo" href="index.html"><span>🍛</span> Indian Food Guide</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html"       class="nav-link">Home</a></li>
+      <li><a href="spices.html"      class="nav-link">Spices</a></li>
+      <li><a href="ingredients.html" class="nav-link">Ingredients</a></li>
+      <li><a href="recipes.html"     class="nav-link">Recipes</a></li>
+    </ul>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── Page Hero ── -->
+<div class="page-hero">
+  <div class="container">
+    <h1>🧺 Core Ingredients</h1>
+    <p>17 essential pantry items — what they are, storage tips, and substitutes for each one.</p>
+  </div>
+</div>
+
+<!-- ── Main Content ── -->
+<main class="page-content">
+  <div class="container">
+
+    <!-- Filter Bar -->
+    <div class="filter-bar">
+      <div class="search-wrap">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input
+          type="search"
+          id="ingredient-search"
+          class="search-input"
+          placeholder="Search ingredients…"
+          aria-label="Search ingredients"
+        >
+      </div>
+      <div class="filter-pills" id="category-pills" role="group" aria-label="Filter by category">
+        <button class="pill active" data-category="all">All (17)</button>
+        <button class="pill" data-category="Dairy & Fat">Dairy &amp; Fat</button>
+        <button class="pill" data-category="Legumes">Legumes</button>
+        <button class="pill" data-category="Flours">Flours</button>
+        <button class="pill" data-category="Aromatics">Aromatics</button>
+        <button class="pill" data-category="Liquids">Liquids</button>
+      </div>
+    </div>
+
+    <div class="results-count" id="results-count" aria-live="polite">17 ingredients</div>
+
+    <!-- Ingredient Card Grid -->
+    <div class="card-grid" id="ingredient-grid" aria-label="Ingredient cards">
+      <div class="empty-state" style="grid-column:1/-1">
+        <div class="empty-state-icon">⏳</div>
+        <p>Loading ingredients…</p>
+      </div>
+    </div>
+
+    <!-- Note about Grains category -->
+    <div style="margin-top:40px;padding:20px;background:white;border:1px solid var(--border);border-radius:12px;font-size:0.875rem;color:var(--brown)">
+      <strong>Note:</strong> Basmati rice is listed under Grains. Use the search bar to find it, or select "All" to see everything.
+    </div>
+
+  </div>
+</main>
+
+<!-- ── Footer ── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">🍛 Indian Food Guide</div>
+        <div class="footer-tagline">A beginner-friendly reference for Indian cooking.</div>
+      </div>
+      <div>
+        <div class="footer-heading">Navigate</div>
+        <ul class="footer-links">
+          <li><a href="index.html"   class="footer-link">Home</a></li>
+          <li><a href="spices.html"  class="footer-link">Spices</a></li>
+          <li><a href="recipes.html" class="footer-link">Recipes</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">Indian Food Guide — Click any ingredient card to expand details.</div>
+  </div>
+</footer>
+
+<script src="data/ingredients.js"></script>
+<script src="js/app.js"></script>
+<script src="js/ingredients-page.js"></script>
+</body>
+</html>

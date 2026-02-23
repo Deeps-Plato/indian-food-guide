@@ -1,0 +1,941 @@
+/* Indian Food Guide — Recipe Data
+   Usage: window.RECIPES_DATA — loaded via <script> tag */
+
+window.RECIPES_DATA = [
+  /* ══════════════════════════════════════════════
+     VEGETARIAN
+  ══════════════════════════════════════════════ */
+  {
+    id: 'dal-tadka',
+    name: 'Dal Tadka',
+    subtitle: 'The classic everyday yellow lentil soup',
+    category: 'vegetarian',
+    tags: ['veg', 'dal', 'comfort food', 'quick'],
+    difficulty: 'Beginner',
+    prepTime: '5 min',
+    cookTime: '25 min',
+    servings: 4,
+    emoji: '🍲',
+    gradient: 'linear-gradient(135deg, #FDE68A, #F59E0B)',
+    description: 'Dal Tadka is the dish that millions of Indians eat multiple times a week. Simple, nourishing yellow lentils finished with a dramatic tempering of ghee, cumin, garlic, and chilies. It is the definitive starting point for cooking Indian food.',
+    story: 'Dal tadka is what a tired parent makes on a weeknight and what a restaurant puts on its menu as a point of pride. The "tadka" (tempering) at the end is the magic — hot ghee sizzling with spices poured over the cooked lentils at the last moment.',
+    whatItTastes: 'Warm, comforting, earthy, and deeply savory with a gentle spice. The ghee and garlic tempering gives it an irresistible aroma. Simple but deeply satisfying.',
+    ingredients: [
+      { amount: '1 cup', item: 'toor dal (split pigeon peas)', note: 'or masoor dal for faster cooking' },
+      { amount: '3 cups', item: 'water' },
+      { amount: '½ tsp', item: 'turmeric powder' },
+      { amount: '1 tsp', item: 'salt', note: 'adjust to taste' },
+      { amount: '1 medium', item: 'tomato', note: 'chopped' },
+      { amount: '—', item: 'For the Tadka (Tempering):' },
+      { amount: '2 tbsp', item: 'ghee', note: 'or butter' },
+      { amount: '1 tsp', item: 'cumin seeds' },
+      { amount: '4–5 cloves', item: 'garlic', note: 'thinly sliced' },
+      { amount: '1', item: 'dried red chili', note: 'or ¼ tsp red chili flakes' },
+      { amount: '¼ tsp', item: 'asafoetida (hing)', note: 'optional but amazing' },
+      { amount: '½ tsp', item: 'red chili powder' },
+      { amount: '—', item: 'fresh cilantro', note: 'for garnish' }
+    ],
+    steps: [
+      {
+        step: 1,
+        title: 'Rinse and cook the dal',
+        instruction: 'Rinse toor dal in cold water 2–3 times until the water runs mostly clear. Add to a medium pot with 3 cups of water, turmeric, and salt. Bring to a boil over high heat, skimming off any foam that rises. Reduce heat, cover, and simmer for 25–30 minutes until the lentils are completely soft and starting to break apart. If using a pressure cooker: 3–4 whistles on medium heat. Add the chopped tomato in the last 10 minutes of cooking.'
+      },
+      {
+        step: 2,
+        title: 'Mash the dal',
+        instruction: 'Once the dal is fully cooked and the tomatoes are soft, use a whisk or the back of a spoon to mash it to a semi-smooth consistency. Add water to adjust — the dal should be pourable, roughly the consistency of a thick soup. Taste and add salt as needed. Keep it on low heat while you make the tadka.'
+      },
+      {
+        step: 3,
+        title: 'Make the tadka (this is the important part!)',
+        instruction: 'In a small pan or ladle, heat 2 tablespoons of ghee over medium-high heat. When the ghee is shimmering and hot (a drop of water should sizzle immediately), add the cumin seeds. They should splutter and sizzle within a second or two. Then add the sliced garlic and cook, stirring, for 1 minute until it turns golden (not brown — watch it carefully, it goes fast!). Add the dried red chili and asafoetida (if using) and cook for 15 seconds more.'
+      },
+      {
+        step: 4,
+        title: 'Add the chili powder and pour',
+        instruction: 'Remove the pan from the heat briefly, add the red chili powder (off heat so it doesn\'t burn), stir, and then immediately pour the entire sizzling tadka over the dal. The dramatic sizzle and aroma when it hits the dal is the signature moment of this dish. Stir to combine.'
+      },
+      {
+        step: 5,
+        title: 'Garnish and serve',
+        instruction: 'Squeeze a little lemon juice over the dal (optional but brightens it). Garnish generously with fresh chopped cilantro. Serve immediately with basmati rice or hot roti/naan.'
+      }
+    ],
+    tips: [
+      'The tadka must be done in a separate pan and poured over at the end — this is non-negotiable for flavor.',
+      'Masoor dal (red lentils) needs no soaking and cooks in 15–20 minutes — great for busy weeknights.',
+      'If garlic starts turning dark brown, reduce heat. Dark brown = fine; black = burned.',
+      'Leftovers thicken considerably in the fridge — add water when reheating.'
+    ],
+    serving: 'Serve with steamed basmati rice for a complete meal. Also wonderful with hot roti or naan. A side of mango pickle and a dollop of yogurt complete the meal.',
+    spicesUsed: ['turmeric', 'cumin-seeds', 'asafoetida', 'red-chili-powder'],
+    image: null
+  },
+  {
+    id: 'palak-paneer',
+    name: 'Palak Paneer',
+    subtitle: 'Creamy spinach and fresh Indian cheese curry',
+    category: 'vegetarian',
+    tags: ['veg', 'paneer', 'spinach', 'restaurant-style'],
+    difficulty: 'Beginner',
+    prepTime: '10 min',
+    cookTime: '25 min',
+    servings: 4,
+    emoji: '🥬',
+    gradient: 'linear-gradient(135deg, #BBF7D0, #16A34A)',
+    description: 'Tender cubes of paneer bathed in a vibrant, silky spinach gravy. Palak paneer is one of the most beloved vegetarian dishes and is a must-know for any Indian cooking beginner. The green color stays bright if you don\'t overcook the spinach.',
+    story: 'A Punjabi classic, palak paneer took its place as India\'s most recognized vegetarian curry. The contrast of rich, creamy spinach with mild, slightly firm paneer is perfectly balanced. Good palak paneer should be green, not grey — the color tells you everything.',
+    whatItTastes: 'Rich and creamy with the fresh taste of spinach, gently spiced with warm aromatics. The paneer is mild and slightly chewy, absorbing the flavors of the sauce. Deeply comforting.',
+    ingredients: [
+      { amount: '500g (1 lb)', item: 'fresh spinach (palak)', note: 'or 2 packs frozen, thawed' },
+      { amount: '250g', item: 'paneer', note: 'cut into 1-inch cubes' },
+      { amount: '2 tbsp', item: 'oil or ghee' },
+      { amount: '1 large', item: 'onion', note: 'finely chopped' },
+      { amount: '1 tbsp', item: 'ginger-garlic paste', note: 'or 4 garlic + 1-inch ginger, minced' },
+      { amount: '2 medium', item: 'tomatoes', note: 'chopped, or ½ cup canned crushed' },
+      { amount: '1 tsp', item: 'cumin seeds' },
+      { amount: '½ tsp', item: 'turmeric' },
+      { amount: '1 tsp', item: 'coriander powder' },
+      { amount: '½ tsp', item: 'red chili powder', note: 'adjust to taste' },
+      { amount: '½ tsp', item: 'garam masala' },
+      { amount: '¼ cup', item: 'heavy cream', note: 'or full-fat yogurt' },
+      { amount: '1–2 tbsp', item: 'kasuri methi (dried fenugreek leaves)', note: 'the secret ingredient!' },
+      { amount: '—', item: 'salt to taste' }
+    ],
+    steps: [
+      {
+        step: 1,
+        title: 'Blanch the spinach',
+        instruction: 'Bring a large pot of water to a boil. Add the spinach and blanch for exactly 2 minutes — not more, or it will lose its bright green color. Immediately drain and transfer to a bowl of ice water (or very cold water) to stop the cooking. This preserves the vibrant green color. Drain again after 2 minutes. Blend the cooled spinach to a smooth puree. Set aside.'
+      },
+      {
+        step: 2,
+        title: 'Brown the paneer (optional but recommended)',
+        instruction: 'In a wide pan, heat 1 tablespoon oil over medium-high heat. Add the paneer cubes and fry on each side for 1–2 minutes until golden. Remove and set aside. This step gives the paneer a better texture and slight flavor, though you can skip it if short on time.'
+      },
+      {
+        step: 3,
+        title: 'Build the base',
+        instruction: 'In the same pan, heat another tablespoon of oil or ghee. Add cumin seeds and let them sizzle for 30 seconds. Add the onion and cook over medium heat, stirring often, for 8–10 minutes until golden brown. This longer cooking of onion is important for flavor — don\'t rush it. Add ginger-garlic paste and cook for 2 minutes, stirring constantly, until the raw smell is gone.'
+      },
+      {
+        step: 4,
+        title: 'Add tomatoes and spices',
+        instruction: 'Add the chopped tomatoes, turmeric, coriander powder, and red chili powder. Cook over medium heat for 5–7 minutes, stirring often, until tomatoes break down completely and the oil separates from the masala — you\'ll see the sides of the pan becoming oil-glossy. This is the sign the base is cooked properly.'
+      },
+      {
+        step: 5,
+        title: 'Combine and finish',
+        instruction: 'Add the spinach puree and stir to combine with the masala. Add ¼ cup water to adjust consistency. Simmer on low heat for 5 minutes. Add the paneer cubes, stir gently, and simmer for 3–4 more minutes. Stir in the cream. Crush the kasuri methi between your palms and add it — this is what gives it that restaurant flavor. Add garam masala, taste and adjust salt. Simmer 2 more minutes.'
+      }
+    ],
+    tips: [
+      'The ice bath after blanching is the key to vibrant green color — don\'t skip it.',
+      'The oil separating from the masala (called "bhunna") tells you the base is fully cooked.',
+      'Frozen spinach works well — just thaw and squeeze out excess water before blending.',
+      'For extra richness, substitute half the cream with full-fat coconut milk.'
+    ],
+    serving: 'Serve with naan, roti, or paratha. A side of sliced onion with lemon juice is traditional. Works beautifully with jeera rice (cumin rice) as well.',
+    spicesUsed: ['cumin-seeds', 'turmeric', 'coriander', 'red-chili-powder', 'garam-masala', 'kasuri-methi'],
+    image: null
+  },
+  {
+    id: 'chana-masala',
+    name: 'Chana Masala',
+    subtitle: 'Bold and tangy chickpea curry',
+    category: 'vegetarian',
+    tags: ['veg', 'chickpeas', 'protein', 'bold flavors'],
+    difficulty: 'Beginner',
+    prepTime: '10 min',
+    cookTime: '30 min',
+    servings: 4,
+    emoji: '🫘',
+    gradient: 'linear-gradient(135deg, #FEF3C7, #F59E0B)',
+    description: 'A bold, tangy, deeply satisfying chickpea curry that is a staple across North India. Chana masala has layers of flavor from whole spices, onion-tomato masala, and a signature tanginess from amchur or tamarind.',
+    story: 'This is the curry of dhabas (roadside eateries) and food stalls across India, eaten with puffed bhature bread or rice. Good chana masala should be dark, thick, and boldly spiced — not mild or pale.',
+    whatItTastes: 'Bold, tangy, earthy, and robustly spiced. The chickpeas are hearty and absorb the complex flavors of the gravy. A satisfying "meaty" curry without any meat.',
+    ingredients: [
+      { amount: '2 cans (400g each)', item: 'chickpeas', note: 'drained and rinsed, or 1.5 cups dried (soaked overnight)' },
+      { amount: '2 tbsp', item: 'oil' },
+      { amount: '2 large', item: 'onions', note: 'finely chopped' },
+      { amount: '1 tbsp', item: 'ginger-garlic paste' },
+      { amount: '3 medium', item: 'tomatoes', note: 'blended or 1 cup canned crushed tomatoes' },
+      { amount: '1 tsp', item: 'cumin seeds' },
+      { amount: '1 tsp', item: 'turmeric' },
+      { amount: '2 tsp', item: 'coriander powder' },
+      { amount: '1 tsp', item: 'red chili powder' },
+      { amount: '2 tsp', item: 'chana masala powder', note: 'or garam masala + 1 tsp amchur' },
+      { amount: '1 tsp', item: 'amchur (dry mango powder)', note: 'or 1 tbsp lemon juice' },
+      { amount: '½ tsp', item: 'garam masala' },
+      { amount: '1 tsp', item: 'salt', note: 'adjust to taste' },
+      { amount: '—', item: 'fresh cilantro and lemon wedges to serve' }
+    ],
+    steps: [
+      {
+        step: 1,
+        title: 'Cook the onion base low and slow',
+        instruction: 'Heat oil in a heavy-bottomed pot over medium heat. Add cumin seeds and let sizzle. Add the finely chopped onions and cook over medium-low heat for 12–15 minutes, stirring regularly. The onions should turn deep golden-brown — this long cooking is the foundation of flavor. Add ginger-garlic paste and cook for 2 more minutes.'
+      },
+      {
+        step: 2,
+        title: 'Add tomatoes and dry spices',
+        instruction: 'Add the blended tomatoes (or crushed canned tomatoes), turmeric, coriander powder, and red chili powder. Cook over medium heat, stirring regularly, for 8–10 minutes until the tomatoes completely cook down and you see oil separating on the sides. The masala should be thick and almost paste-like at this point.'
+      },
+      {
+        step: 3,
+        title: 'Add chickpeas and simmer',
+        instruction: 'Add the drained chickpeas and 1 cup of water. Stir everything together and bring to a boil. Reduce heat to low and simmer for 10–15 minutes. Use the back of a spoon to mash a few chickpeas against the side of the pot — this helps thicken the gravy naturally.'
+      },
+      {
+        step: 4,
+        title: 'Season and finish',
+        instruction: 'Add the chana masala powder (or garam masala), amchur powder, and remaining garam masala. Stir and taste. The flavor should be bold and tangy. Add salt as needed. Add a little water if the curry is too thick. Simmer for 5 more minutes to let the spices bloom.'
+      },
+      {
+        step: 5,
+        title: 'Garnish and serve',
+        instruction: 'Squeeze half a lemon over the curry, stir in freshly chopped cilantro, and serve hot. The lemon juice added right at the end brightens all the flavors dramatically.'
+      }
+    ],
+    tips: [
+      'Dark, deeply caramelized onions are the secret to restaurant-quality chana masala.',
+      'If using dried chickpeas, cook with a black tea bag — it darkens the chickpeas and adds depth (the trick restaurant kitchens use).',
+      'The chana masala spice blend (by brands like MDH or Everest) is different from garam masala and specifically formulated for this dish.',
+      'Leftovers taste even better the next day as the flavors meld together.'
+    ],
+    serving: 'Traditionally served with bhature (deep-fried bread) or kulcha. Also excellent with rice or roti. Add sliced raw onion, cilantro, and a squeeze of lemon on the side.',
+    spicesUsed: ['cumin-seeds', 'turmeric', 'coriander', 'red-chili-powder', 'garam-masala', 'amchur'],
+    image: null
+  },
+  {
+    id: 'aloo-gobi',
+    name: 'Aloo Gobi',
+    subtitle: 'Dry-spiced potatoes and cauliflower',
+    category: 'vegetarian',
+    tags: ['veg', 'potato', 'cauliflower', 'dry curry', 'beginner'],
+    difficulty: 'Beginner',
+    prepTime: '10 min',
+    cookTime: '25 min',
+    servings: 4,
+    emoji: '🥦',
+    gradient: 'linear-gradient(135deg, #FFFBEB, #FDE68A)',
+    description: 'A simple, rustic dry curry (sabzi) of potatoes and cauliflower. This is weekday home cooking at its finest — no cream, no elaborate gravy, just vegetables coated in beautifully fragrant spices.',
+    story: 'Made popular globally by the film Bend It Like Beckham, aloo gobi is what every Indian home cook knows. It\'s the antithesis of restaurant showiness — honest, simple, and deeply satisfying.',
+    whatItTastes: 'Earthy and warmly spiced, with tender potato and slightly caramelized cauliflower florets. It\'s a "dry" curry — the vegetables themselves become the star, not a sauce.',
+    ingredients: [
+      { amount: '2 large', item: 'potatoes', note: 'peeled, cubed into 1-inch pieces' },
+      { amount: '1 small', item: 'cauliflower (gobi)', note: 'cut into medium florets' },
+      { amount: '3 tbsp', item: 'oil' },
+      { amount: '1 tsp', item: 'cumin seeds' },
+      { amount: '1 large', item: 'onion', note: 'thinly sliced' },
+      { amount: '1 tsp', item: 'ginger-garlic paste' },
+      { amount: '½ tsp', item: 'turmeric' },
+      { amount: '1 tsp', item: 'coriander powder' },
+      { amount: '½ tsp', item: 'red chili powder' },
+      { amount: '½ tsp', item: 'amchur (dry mango powder)', note: 'or squeeze of lemon' },
+      { amount: '½ tsp', item: 'garam masala' },
+      { amount: '1 tsp', item: 'salt' },
+      { amount: '—', item: 'fresh cilantro to garnish' }
+    ],
+    steps: [
+      {
+        step: 1,
+        title: 'Par-cook the potatoes',
+        instruction: 'Heat 2 tablespoons of oil in a wide, heavy pan over medium-high heat. Add the potato cubes and cook, stirring occasionally, for 8–10 minutes until they\'re starting to turn golden on the edges and are about 70% cooked through. Remove and set aside. This separate cooking ensures crispy edges on the potatoes.'
+      },
+      {
+        step: 2,
+        title: 'Cook the cauliflower',
+        instruction: 'In the same pan, add another tablespoon of oil if needed. Add the cauliflower florets and cook over medium-high heat for 5–6 minutes, stirring occasionally, until they have some golden spots. Don\'t stir too much — let them sit so they can caramelize. Remove and set aside with the potatoes.'
+      },
+      {
+        step: 3,
+        title: 'Build the masala',
+        instruction: 'Reduce heat to medium. Add cumin seeds to the pan. Let them sizzle for 30 seconds. Add the sliced onion and cook 5–6 minutes until golden. Add ginger-garlic paste and cook 1 minute. Add all the dry spices — turmeric, coriander, and red chili powder — and stir well for 1 minute to toast the spices in the oil.'
+      },
+      {
+        step: 4,
+        title: 'Combine and finish cooking',
+        instruction: 'Return the par-cooked potatoes and cauliflower to the pan. Sprinkle with salt. Stir gently to coat everything with the masala. Add 2–3 tablespoons of water, cover with a lid, and cook on low heat for 8–10 minutes until the potatoes are fully tender. Stir once or twice carefully — you want the vegetables to stay intact.'
+      },
+      {
+        step: 5,
+        title: 'Final seasoning and serve',
+        instruction: 'Uncover, sprinkle with amchur and garam masala, and stir gently. Taste and adjust salt. The amchur adds a pleasant tanginess that brightens the whole dish. Garnish with fresh cilantro and serve hot.'
+      }
+    ],
+    tips: [
+      'Don\'t crowd the pan when frying vegetables — fry in batches if needed, or they steam instead of caramelize.',
+      'The potatoes and cauliflower should have some color on them before mixing with spices — that browning adds flavor.',
+      'This is a "dry" sabzi — don\'t add too much water. It should have little to no gravy.',
+      'Add a sliced green chili with the onions for restaurant-style heat.'
+    ],
+    serving: 'Serve as a side dish with roti or paratha and dal. Also delicious stuffed into paratha (aloo gobi paratha). A classic North Indian thali includes aloo gobi, dal, roti, and rice.',
+    spicesUsed: ['cumin-seeds', 'turmeric', 'coriander', 'red-chili-powder', 'amchur', 'garam-masala'],
+    image: null
+  },
+  {
+    id: 'rajma',
+    name: 'Rajma',
+    subtitle: 'Punjabi kidney bean curry',
+    category: 'vegetarian',
+    tags: ['veg', 'kidney beans', 'punjabi', 'comfort food'],
+    difficulty: 'Beginner',
+    prepTime: '10 min',
+    cookTime: '35 min',
+    servings: 4,
+    emoji: '🫘',
+    gradient: 'linear-gradient(135deg, #FCA5A5, #DC2626)',
+    description: 'The beloved Punjabi kidney bean curry, served with rice in the iconic "rajma-chawal" combination. Rich, hearty, and full of warm spices — this is the ultimate Indian comfort food.',
+    story: 'If dal tadka is the everyday dish, rajma chawal (kidney bean curry with rice) is the Sunday comfort food of North India. Every family has a specific way they like it — this version is thick, deeply flavored, and completely satisfying.',
+    whatItTastes: 'Rich, earthy, hearty — the kidney beans become creamy and absorb the thick tomato-onion gravy beautifully. Boldly spiced and deeply warming.',
+    ingredients: [
+      { amount: '2 cans (400g)', item: 'kidney beans', note: 'drained and rinsed; or 1 cup dried soaked overnight' },
+      { amount: '2 tbsp', item: 'oil or ghee' },
+      { amount: '2 large', item: 'onions', note: 'finely chopped' },
+      { amount: '1 tbsp', item: 'ginger-garlic paste' },
+      { amount: '3 medium', item: 'tomatoes', note: 'blended smooth' },
+      { amount: '1 tsp', item: 'cumin seeds' },
+      { amount: '1 tsp', item: 'turmeric' },
+      { amount: '2 tsp', item: 'coriander powder' },
+      { amount: '1 tsp', item: 'red chili powder' },
+      { amount: '1 tsp', item: 'garam masala' },
+      { amount: '1 tsp', item: 'salt' },
+      { amount: '¼ cup', item: 'cream or butter', note: 'optional, for richness' },
+      { amount: '—', item: 'fresh cilantro to garnish' }
+    ],
+    steps: [
+      { step: 1, title: 'Cook the base', instruction: 'Heat oil in a pot over medium heat. Add cumin seeds and let sizzle. Add the finely chopped onions and cook for 12–15 minutes over medium heat until deep golden brown. This is the most important step — don\'t rush it. Add ginger-garlic paste, cook 2 minutes.' },
+      { step: 2, title: 'Add tomatoes and spices', instruction: 'Add the blended tomatoes, turmeric, coriander powder, and red chili powder. Cook for 10 minutes, stirring frequently, until the oil separates from the masala and it looks thick and glossy. This means the tomatoes are fully cooked.' },
+      { step: 3, title: 'Simmer the beans', instruction: 'Add the drained kidney beans and 1 cup of water. Stir, bring to a boil, then reduce heat and simmer for 15 minutes. Mash about a quarter of the beans with the back of a spoon to naturally thicken the gravy.' },
+      { step: 4, title: 'Finish and serve', instruction: 'Add garam masala, salt, and cream if using. Simmer 5 more minutes. The curry should be thick and rich. Taste and adjust seasoning. Garnish with cilantro and a knob of butter for extra richness.' }
+    ],
+    tips: [
+      'Long, slow cooking of onions and tomatoes is the key to restaurant-quality rajma.',
+      'Mashing some beans gives the gravy body without needing cream.',
+      'Rajma tastes much better the next day — make a big batch.',
+      'If using dried beans: always boil vigorously for 10 minutes before pressure cooking (removes toxins).'
+    ],
+    serving: 'The definitive pairing is with steamed basmati rice (rajma-chawal). A spoonful of ghee on top, sliced onion with lemon, and green chili pickle on the side completes the meal.',
+    spicesUsed: ['cumin-seeds', 'turmeric', 'coriander', 'red-chili-powder', 'garam-masala'],
+    image: null
+  },
+  {
+    id: 'matar-paneer',
+    name: 'Matar Paneer',
+    subtitle: 'Peas and paneer in a rich tomato gravy',
+    category: 'vegetarian',
+    tags: ['veg', 'paneer', 'peas', 'north indian'],
+    difficulty: 'Beginner',
+    prepTime: '10 min',
+    cookTime: '25 min',
+    servings: 4,
+    emoji: '🟢',
+    gradient: 'linear-gradient(135deg, #D1FAE5, #059669)',
+    description: 'Green peas and paneer in a rich, mildly spiced tomato-onion gravy. A North Indian classic that\'s simpler than butter chicken and equally satisfying.',
+    story: 'Matar paneer is what most home cooks make when they want something celebratory but quick. The peas add a pop of sweetness that balances the rich tomato gravy.',
+    whatItTastes: 'Mildly spiced, gently sweet from the peas, creamy from the paneer, with a rich tomato base. Comfort in a bowl.',
+    ingredients: [
+      { amount: '200g', item: 'paneer', note: 'cubed' },
+      { amount: '1 cup', item: 'frozen peas', note: 'thawed' },
+      { amount: '2 tbsp', item: 'oil or ghee' },
+      { amount: '1 large', item: 'onion', note: 'blended or finely chopped' },
+      { amount: '1 tsp', item: 'ginger-garlic paste' },
+      { amount: '3 medium', item: 'tomatoes', note: 'blended' },
+      { amount: '½ tsp', item: 'turmeric' },
+      { amount: '1 tsp', item: 'coriander powder' },
+      { amount: '½ tsp', item: 'red chili powder' },
+      { amount: '½ tsp', item: 'garam masala' },
+      { amount: '2 tbsp', item: 'cream', note: 'optional' },
+      { amount: '1 tsp', item: 'salt' }
+    ],
+    steps: [
+      { step: 1, title: 'Make the masala', instruction: 'Heat oil, sauté onion until golden (8–10 min). Add ginger-garlic paste, cook 2 min. Add blended tomatoes, turmeric, coriander, and chili powder. Cook 8–10 min until oil separates.' },
+      { step: 2, title: 'Add peas', instruction: 'Add the peas and ½ cup water. Simmer 5 minutes.' },
+      { step: 3, title: 'Add paneer and finish', instruction: 'Add paneer cubes. Stir gently. Add cream and garam masala. Simmer 5 minutes. Taste and adjust salt.' }
+    ],
+    tips: ['Fry paneer cubes in oil until golden before adding for better texture.', 'Frozen peas are perfectly fine — they\'re actually often sweeter than fresh.', 'For a smoother gravy, blend the onion before cooking.'],
+    serving: 'Serve with naan, roti, or rice. A squeeze of lemon over the finished dish brightens the flavors.',
+    spicesUsed: ['turmeric', 'coriander', 'red-chili-powder', 'garam-masala'],
+    image: null
+  },
+  {
+    id: 'dal-makhani',
+    name: 'Dal Makhani',
+    subtitle: 'Slow-cooked black lentils in a rich buttery gravy',
+    category: 'vegetarian',
+    tags: ['veg', 'dal', 'slow cook', 'restaurant-style', 'rich'],
+    difficulty: 'Intermediate',
+    prepTime: '10 min + overnight soak',
+    cookTime: '90 min',
+    servings: 6,
+    emoji: '🖤',
+    gradient: 'linear-gradient(135deg, #374151, #111827)',
+    description: 'The king of Indian dals. Whole black lentils and kidney beans slow-cooked for hours with butter, cream, and aromatics. Restaurant dal makhani is typically cooked overnight in a tandoor — this stove version gets you remarkably close.',
+    story: 'Dal makhani originated in the Punjab region and was perfected in the kitchens of Moti Mahal restaurant in Delhi. "Makhani" means buttery. The long, slow cooking is what transforms simple lentils into something extraordinary.',
+    whatItTastes: 'Intensely rich, buttery, deeply earthy, and complex. The slow cooking creates a velvety smoothness. One of the most satisfying and indulgent vegetarian dishes in the world.',
+    ingredients: [
+      { amount: '1 cup', item: 'whole black urad dal (black lentils)', note: 'soaked overnight' },
+      { amount: '¼ cup', item: 'rajma (kidney beans)', note: 'soaked overnight' },
+      { amount: '4 tbsp', item: 'butter', note: 'divided' },
+      { amount: '2 tbsp', item: 'oil' },
+      { amount: '2 large', item: 'onions', note: 'finely chopped' },
+      { amount: '1.5 tbsp', item: 'ginger-garlic paste' },
+      { amount: '1 cup', item: 'canned crushed tomatoes' },
+      { amount: '1 tsp', item: 'turmeric' },
+      { amount: '1 tsp', item: 'red chili powder' },
+      { amount: '1 tsp', item: 'coriander powder' },
+      { amount: '1 tsp', item: 'garam masala' },
+      { amount: '½ cup', item: 'heavy cream', note: 'plus more to drizzle' },
+      { amount: '1.5 tsp', item: 'salt' },
+      { amount: '1 tsp', item: 'sugar', note: 'balances the acidity' }
+    ],
+    steps: [
+      { step: 1, title: 'Pressure cook the dal', instruction: 'Drain the soaked dal and kidney beans. Pressure cook with 4 cups water, 1 tsp salt, and ½ tsp turmeric for 6–8 whistles (or 45 min in an instant pot on high). The dal should be completely soft and most should have burst open. If not fully soft, cook longer — this step is critical.' },
+      { step: 2, title: 'Make the masala base', instruction: 'In a heavy pot, heat 2 tbsp butter and 2 tbsp oil over medium heat. Cook onions for 15 minutes until deep golden. Add ginger-garlic paste, cook 3 minutes. Add tomatoes and all dry spices except garam masala. Cook 12–15 minutes until very thick and oil separates.' },
+      { step: 3, title: 'Combine and slow cook', instruction: 'Add the cooked dal (with its cooking liquid) to the masala. Stir well. Bring to a boil, then reduce to the lowest possible heat. Simmer uncovered for 45–60 minutes, stirring every 10 minutes. The dal will thicken and deepen in flavor. This is the most important step — the long simmer is what makes dal makhani special.' },
+      { step: 4, title: 'Finish with dairy', instruction: 'Add the remaining 2 tbsp butter, heavy cream, garam masala, and sugar. Stir well. Simmer another 10 minutes. The consistency should coat the back of a spoon. Taste and adjust salt.' }
+    ],
+    tips: [
+      'The overnight soak AND long cooking time are non-negotiable — there are no shortcuts to great dal makhani.',
+      'The longer you simmer, the better. Restaurant versions cook for 12+ hours.',
+      'Stir regularly to prevent sticking — the creamy dal burns easily.',
+      'If too thick, add hot water gradually; never add cold water.'
+    ],
+    serving: 'Serve with naan (butter naan is perfect here), a drizzle of cream, and a knob of butter on top. Rice works too. This dish is very rich — a little goes a long way.',
+    spicesUsed: ['turmeric', 'red-chili-powder', 'coriander', 'garam-masala'],
+    image: null
+  },
+  {
+    id: 'bhindi-masala',
+    name: 'Bhindi Masala',
+    subtitle: 'Crispy spiced okra stir-fry',
+    category: 'vegetarian',
+    tags: ['veg', 'okra', 'dry curry', 'quick'],
+    difficulty: 'Beginner',
+    prepTime: '10 min',
+    cookTime: '20 min',
+    servings: 4,
+    emoji: '🫛',
+    gradient: 'linear-gradient(135deg, #BBF7D0, #16A34A)',
+    description: 'Crispy, well-spiced okra (bhindi) stir-fried with onions and spices. The key to non-slimy okra is dry heat and patience.',
+    story: 'Bhindi masala divides people into two camps: those who love it and those who think okra is slimy. This recipe converts the skeptics by keeping the okra crispy with a simple technique.',
+    whatItTastes: 'Crispy outside with a tender interior. Warmly spiced with earthy cumin and tangy amchur. No sliminess when done correctly.',
+    ingredients: [
+      { amount: '500g (1 lb)', item: 'okra (bhindi)', note: 'washed and completely dried' },
+      { amount: '3 tbsp', item: 'oil' },
+      { amount: '1 large', item: 'onion', note: 'thinly sliced' },
+      { amount: '1 tsp', item: 'cumin seeds' },
+      { amount: '½ tsp', item: 'turmeric' },
+      { amount: '1 tsp', item: 'coriander powder' },
+      { amount: '½ tsp', item: 'red chili powder' },
+      { amount: '½ tsp', item: 'amchur (dry mango powder)' },
+      { amount: '1 tsp', item: 'salt' }
+    ],
+    steps: [
+      { step: 1, title: 'Dry the okra thoroughly', instruction: 'CRITICAL STEP: Wash okra and dry every piece completely with a cloth or paper towels. Any moisture = sliminess. Cut off the tops and slice into 1-inch rounds.' },
+      { step: 2, title: 'Fry okra in batches', instruction: 'Heat 2 tbsp oil in a wide pan over high heat. Add okra in a single layer (don\'t crowd). Cook without stirring for 3–4 minutes until the bottom side is caramelized. Stir, cook 3 more minutes. Remove and set aside. The okra should look slightly shriveled and have color.' },
+      { step: 3, title: 'Cook onion and spices', instruction: 'Add remaining oil, cumin seeds, then onion. Cook 7–8 minutes until golden. Add all dry spices and stir 1 minute.' },
+      { step: 4, title: 'Combine and serve', instruction: 'Return okra to pan. Stir gently to coat with spices. Cook 3 more minutes. Taste and adjust salt. Garnish with cilantro.' }
+    ],
+    tips: ['DRY okra is the single most important tip — pat it completely dry.', 'High heat prevents sliminess. Low heat makes it slimy.', 'Cook in a single layer and don\'t stir too often.', 'A squeeze of lemon at the end brightens everything.'],
+    serving: 'Serve with roti or paratha. Also works as a side with dal and rice.',
+    spicesUsed: ['cumin-seeds', 'turmeric', 'coriander', 'red-chili-powder', 'amchur'],
+    image: null
+  },
+  {
+    id: 'baingan-bharta',
+    name: 'Baingan Bharta',
+    subtitle: 'Smoky fire-roasted eggplant mash',
+    category: 'vegetarian',
+    tags: ['veg', 'eggplant', 'smoky', 'rustic'],
+    difficulty: 'Beginner',
+    prepTime: '5 min',
+    cookTime: '30 min',
+    servings: 4,
+    emoji: '🍆',
+    gradient: 'linear-gradient(135deg, #A855F7, #7C3AED)',
+    description: 'Whole eggplant roasted directly over an open flame until charred and smoky, then mashed with onions, tomatoes, and spices. One of the most flavorful and unique Indian dishes, and completely plant-based.',
+    story: 'Bharta means "mash" in Hindi. The eggplant must be charred over fire — this smokiness cannot be replicated by oven roasting. Even a gas stove flame works beautifully.',
+    whatItTastes: 'Deeply smoky, soft, slightly sweet, and robustly spiced. The char from the flame is the defining flavor. Rustic and absolutely delicious.',
+    ingredients: [
+      { amount: '2 large', item: 'eggplants (baingan)', note: '~700g total' },
+      { amount: '2 tbsp', item: 'oil' },
+      { amount: '1 large', item: 'onion', note: 'finely chopped' },
+      { amount: '1 tsp', item: 'ginger-garlic paste' },
+      { amount: '2 medium', item: 'tomatoes', note: 'finely chopped' },
+      { amount: '½ tsp', item: 'turmeric' },
+      { amount: '½ tsp', item: 'red chili powder' },
+      { amount: '½ tsp', item: 'coriander powder' },
+      { amount: '½ tsp', item: 'garam masala' },
+      { amount: '1 tsp', item: 'salt' },
+      { amount: '—', item: 'fresh cilantro' }
+    ],
+    steps: [
+      { step: 1, title: 'Roast the eggplant over flame', instruction: 'Pierce eggplant in a few places with a fork. Place directly on a gas flame (or under the broiler) over medium-high heat. Turn every 3–4 minutes until the entire surface is charred and the eggplant is completely soft and collapsed (about 15–20 minutes total). It should look burnt on the outside — that\'s correct!' },
+      { step: 2, title: 'Peel and mash', instruction: 'Let the eggplant cool enough to handle. The charred skin will peel off easily. Discard the skin and charred bits, keeping the soft, smoky interior. Mash roughly with a fork — leave some texture.' },
+      { step: 3, title: 'Make the masala', instruction: 'Heat oil in a pan. Cook onion 8–10 minutes until golden. Add ginger-garlic paste, 2 minutes. Add tomatoes and dry spices. Cook 7–8 minutes until thick.' },
+      { step: 4, title: 'Combine', instruction: 'Add the mashed eggplant to the masala. Stir and cook together 5 minutes. Taste and adjust salt. Add garam masala and cilantro.' }
+    ],
+    tips: ['The flame charring is mandatory — it\'s the only source of the smoky flavor.', 'If using a broiler, broil on high with the oven door slightly open, turning frequently.', 'A little mustard oil in the final drizzle is traditional in North India.', 'The dish should taste smoky. If it doesn\'t, the eggplant wasn\'t charred enough.'],
+    serving: 'Serve with roti or makki di roti (cornmeal flatbread). A traditional accompaniment is sarson ka saag (mustard greens). Also wonderful with rice.',
+    spicesUsed: ['turmeric', 'red-chili-powder', 'coriander', 'garam-masala'],
+    image: null
+  },
+  {
+    id: 'aloo-paratha',
+    name: 'Aloo Paratha',
+    subtitle: 'Stuffed whole wheat flatbread with spiced potato filling',
+    category: 'vegetarian',
+    tags: ['veg', 'bread', 'breakfast', 'punjabi', 'stuffed'],
+    difficulty: 'Intermediate',
+    prepTime: '20 min',
+    cookTime: '30 min',
+    servings: 4,
+    emoji: '🫓',
+    gradient: 'linear-gradient(135deg, #FDE68A, #F59E0B)',
+    description: 'Whole wheat flatbreads stuffed with a well-spiced mashed potato filling. The quintessential Punjabi breakfast, served with yogurt, butter, and pickle.',
+    story: 'Aloo paratha is the breakfast that fuels Punjabis through harsh winters. Every family has their own secret spice blend for the filling. Crispy on the outside, soft and flavorful inside.',
+    whatItTastes: 'Crispy, buttery exterior with a warm, spiced, slightly tangy potato filling. Comfort breakfast food at its finest.',
+    ingredients: [
+      { amount: '2 cups', item: 'atta (whole wheat flour)' },
+      { amount: '½ tsp', item: 'salt' },
+      { amount: '¾ cup', item: 'warm water', note: 'approximately' },
+      { amount: '—', item: 'For the Filling:' },
+      { amount: '3 large', item: 'potatoes', note: 'boiled and mashed smooth' },
+      { amount: '1', item: 'green chili', note: 'finely minced' },
+      { amount: '1 tsp', item: 'cumin seeds', note: 'toasted' },
+      { amount: '½ tsp', item: 'red chili powder' },
+      { amount: '½ tsp', item: 'amchur (dry mango powder)' },
+      { amount: '2 tbsp', item: 'fresh cilantro', note: 'finely chopped' },
+      { amount: '1 tsp', item: 'salt' },
+      { amount: '—', item: 'ghee or butter for cooking' }
+    ],
+    steps: [
+      { step: 1, title: 'Make the dough', instruction: 'Mix flour and salt. Add warm water gradually, kneading into a soft, smooth dough (softer than bread dough). Cover and rest 30 minutes minimum — this resting makes it pliable.' },
+      { step: 2, title: 'Make the filling', instruction: 'Mix mashed potatoes (completely smooth, no lumps) with all filling ingredients. Divide into 8 equal balls.' },
+      { step: 3, title: 'Roll and stuff', instruction: 'Divide dough into 8 balls. Flatten a dough ball into a 4-inch circle. Place a potato filling ball in the center. Bring the dough edges up and over the filling, pinching to seal. Flatten gently with your palm.' },
+      { step: 4, title: 'Roll carefully', instruction: 'Using a rolling pin, gently roll the stuffed ball into an 8-inch circle. Roll from the center outward, turning frequently. The key is gentle, even pressure — don\'t tear through.' },
+      { step: 5, title: 'Cook on griddle', instruction: 'Heat a tawa (griddle) over high heat. Cook paratha for 1–2 minutes per side until brown spots appear. Spread a teaspoon of ghee or butter on each side. Press edges with a spatula. Cook until both sides are golden and crispy.' }
+    ],
+    tips: ['Potato filling must be completely smooth — any lumps will tear the bread.', 'Don\'t roll too thin or the bread tears. A bit thicker than a tortilla is right.', 'Cook on a very hot griddle — medium heat makes them dry, not crispy.', 'Practice makes perfect with rolling — the first few will be imperfect.'],
+    serving: 'The traditional accompaniments are yogurt (dahi), salted butter, and achaar (pickle). A glass of lassi on the side completes the Punjabi breakfast experience.',
+    spicesUsed: ['cumin-seeds', 'red-chili-powder', 'amchur'],
+    image: null
+  },
+
+  /* ══════════════════════════════════════════════
+     MEAT DISHES
+  ══════════════════════════════════════════════ */
+  {
+    id: 'butter-chicken',
+    name: 'Butter Chicken',
+    subtitle: 'Creamy tomato-based chicken curry — a global classic',
+    category: 'meat',
+    tags: ['chicken', 'mild', 'creamy', 'restaurant-style', 'beginner-friendly'],
+    difficulty: 'Beginner',
+    prepTime: '20 min + 2 hr marinate',
+    cookTime: '35 min',
+    servings: 4,
+    emoji: '🍗',
+    gradient: 'linear-gradient(135deg, #FDE68A, #F97316)',
+    description: 'The world\'s most recognized Indian dish. Tender chicken pieces in a velvety, mildly spiced tomato-cream sauce with butter. Originally created from leftover tandoori chicken at Moti Mahal restaurant in Delhi.',
+    story: 'Butter chicken was born from creative recycling — leftover tandoori chicken was added to a rich tomato sauce enriched with butter and cream. Today it\'s the gateway dish for millions of people discovering Indian food.',
+    whatItTastes: 'Mild, creamy, slightly sweet from the tomatoes, with a gentle warmth from the spices. The richness of butter and cream balances the tang of the tomatoes perfectly. The most approachable Indian curry.',
+    ingredients: [
+      { amount: '700g (1.5 lb)', item: 'chicken thighs', note: 'boneless, skinless, cut into 2-inch pieces' },
+      { amount: '—', item: '— Marinade —' },
+      { amount: '½ cup', item: 'full-fat yogurt' },
+      { amount: '2 tsp', item: 'Kashmiri red chili powder', note: 'for color without heat' },
+      { amount: '1 tsp', item: 'turmeric' },
+      { amount: '1 tsp', item: 'garam masala' },
+      { amount: '1 tbsp', item: 'ginger-garlic paste' },
+      { amount: '1 tsp', item: 'salt' },
+      { amount: '1 tbsp', item: 'oil' },
+      { amount: '—', item: '— Makhani Sauce —' },
+      { amount: '3 tbsp', item: 'butter', note: 'divided' },
+      { amount: '1 tbsp', item: 'oil' },
+      { amount: '2 large', item: 'onions', note: 'roughly chopped' },
+      { amount: '6 cloves', item: 'garlic' },
+      { amount: '1-inch', item: 'fresh ginger' },
+      { amount: '5 medium', item: 'tomatoes', note: 'or 1.5 cups canned crushed' },
+      { amount: '2 tsp', item: 'Kashmiri red chili powder' },
+      { amount: '1 tsp', item: 'coriander powder' },
+      { amount: '½ tsp', item: 'turmeric' },
+      { amount: '1 tsp', item: 'garam masala' },
+      { amount: '½ cup', item: 'heavy cream' },
+      { amount: '1–2 tbsp', item: 'kasuri methi (dried fenugreek leaves)' },
+      { amount: '1 tbsp', item: 'sugar', note: 'balances the tomato acidity' },
+      { amount: '1.5 tsp', item: 'salt' }
+    ],
+    steps: [
+      {
+        step: 1,
+        title: 'Marinate the chicken (do this first)',
+        instruction: 'Combine all marinade ingredients with the chicken pieces. Mix well to coat every piece. Cover and refrigerate for at least 2 hours, or overnight for best results. The yogurt marinade tenderizes the chicken and the spices penetrate deeply.'
+      },
+      {
+        step: 2,
+        title: 'Cook the chicken',
+        instruction: 'Heat a wide, heavy pan or grill pan over high heat. Drizzle with a little oil. Remove chicken from marinade (shake off excess) and cook in batches over high heat for 3–4 minutes per side until you have charred spots and the chicken is cooked through. Set aside. You want this char — it adds the "tandoor" flavor that makes butter chicken authentic. Alternatively, broil in the oven at maximum heat for 8–10 minutes.'
+      },
+      {
+        step: 3,
+        title: 'Make the sauce base',
+        instruction: 'In the same pan, heat 2 tbsp butter and 1 tbsp oil over medium heat. Add the onions, garlic, and ginger and cook for 10 minutes until soft and golden. Add the tomatoes and all dry spices (Kashmiri chili, coriander, turmeric). Cook for 15 minutes, stirring regularly, until the tomatoes completely break down and the oil separates from the mixture.'
+      },
+      {
+        step: 4,
+        title: 'Blend the sauce smooth',
+        instruction: 'Let the sauce cool slightly, then transfer to a blender and blend completely smooth. Pour through a fine-mesh strainer back into the pan, pressing with a spoon — this gives you the silky-smooth restaurant texture. Discard the solids left in the strainer (or mix into dal for extra flavor).'
+      },
+      {
+        step: 5,
+        title: 'Combine and finish',
+        instruction: 'Return the strained sauce to medium-low heat. Add the cooked chicken pieces and stir gently. Simmer for 10 minutes. Stir in the heavy cream, the remaining tablespoon of butter, sugar, and salt. Crush the kasuri methi between your palms and add it. Add garam masala. Simmer on the lowest heat for 5 more minutes. Taste and adjust salt and sugar to balance flavors.'
+      }
+    ],
+    tips: [
+      'Kashmiri red chili powder is what gives butter chicken its signature orange-red color without being spicy.',
+      'Charring the chicken (step 2) is what differentiates restaurant butter chicken from bland versions. Don\'t skip it.',
+      'Straining the sauce (step 4) is the restaurant secret for silky texture.',
+      'The sugar is not optional — it balances the tomato acidity and gives the sauce that restaurant depth.',
+      'Kasuri methi is the spice that makes it taste like it came from a restaurant. Worth finding at an Indian grocery.'
+    ],
+    serving: 'The classic pairing is with garlic naan or butter naan. Steamed basmati rice also works beautifully. A simple onion salad with lemon and a drizzle of cream on the curry before serving looks beautiful.',
+    spicesUsed: ['kashmiri-chili', 'turmeric', 'garam-masala', 'coriander', 'kasuri-methi'],
+    image: null
+  },
+  {
+    id: 'chicken-tikka-masala',
+    name: 'Chicken Tikka Masala',
+    subtitle: 'Grilled chicken in a rich, aromatic masala sauce',
+    category: 'meat',
+    tags: ['chicken', 'grilled', 'restaurant-style', 'aromatic'],
+    difficulty: 'Intermediate',
+    prepTime: '25 min + 4 hr marinate',
+    cookTime: '40 min',
+    servings: 4,
+    emoji: '🍗',
+    gradient: 'linear-gradient(135deg, #FCA5A5, #DC2626)',
+    description: 'Marinated chicken pieces grilled until charred, then added to a richly spiced masala sauce. More complex than butter chicken, with a deeper, more aromatic flavor profile.',
+    story: 'Often confused with butter chicken, CTM has a more complex, spicier sauce. It\'s believed to have originated in British Indian restaurants. The tikka (grilled chicken pieces) added to a masala sauce is the defining technique.',
+    whatItTastes: 'Rich, aromatic, more complex and spicier than butter chicken. The grilled chicken adds a smoky dimension. Bold and deeply satisfying.',
+    ingredients: [
+      { amount: '700g', item: 'chicken thighs', note: 'boneless, cut into chunks' },
+      { amount: '—', item: '— Tikka Marinade —' },
+      { amount: '¾ cup', item: 'full-fat yogurt' },
+      { amount: '2 tsp', item: 'red chili powder' },
+      { amount: '2 tsp', item: 'tandoori masala', note: 'or garam masala + ½ tsp paprika' },
+      { amount: '1 tsp', item: 'cumin powder' },
+      { amount: '1 tbsp', item: 'ginger-garlic paste' },
+      { amount: '2 tbsp', item: 'lemon juice' },
+      { amount: '1 tsp', item: 'salt' },
+      { amount: '—', item: '— Masala Sauce —' },
+      { amount: '2 tbsp', item: 'oil' },
+      { amount: '2 tbsp', item: 'butter' },
+      { amount: '1 large', item: 'onion', note: 'finely chopped' },
+      { amount: '1.5 tbsp', item: 'ginger-garlic paste' },
+      { amount: '1 cup', item: 'crushed tomatoes' },
+      { amount: '2 tsp', item: 'coriander powder' },
+      { amount: '1 tsp', item: 'cumin powder' },
+      { amount: '1 tsp', item: 'garam masala' },
+      { amount: '1 tsp', item: 'Kashmiri chili' },
+      { amount: '½ cup', item: 'heavy cream' },
+      { amount: '1 tbsp', item: 'kasuri methi' }
+    ],
+    steps: [
+      { step: 1, title: 'Marinate and grill chicken', instruction: 'Mix all marinade ingredients with chicken. Marinate 4–24 hours. Grill, broil, or pan-sear on high heat until charred and cooked through. Set aside.' },
+      { step: 2, title: 'Build the sauce', instruction: 'In a pan, heat oil and butter. Cook onion 10 minutes until golden. Add ginger-garlic paste, cook 3 minutes. Add tomatoes and dry spices. Cook 12 minutes until oil separates and masala is very thick.' },
+      { step: 3, title: 'Blend and strain (optional)', instruction: 'Blend the sauce smooth for a restaurant texture. Strain through a sieve. Return to pan.' },
+      { step: 4, title: 'Combine and finish', instruction: 'Add grilled chicken to the sauce. Stir in cream and kasuri methi. Simmer 10 minutes. Add garam masala, taste and adjust salt.' }
+    ],
+    tips: ['Longer marinating time = more flavorful chicken.', 'The char on the chicken is essential — don\'t just poach it in the sauce.', 'This is slightly spicier and more complex than butter chicken.', 'Kasuri methi makes an enormous difference to the final flavor.'],
+    serving: 'Serve with naan or rice. A side of cucumber raita cuts the richness.',
+    spicesUsed: ['red-chili-powder', 'kashmiri-chili', 'coriander', 'garam-masala', 'kasuri-methi', 'cumin-seeds'],
+    image: null
+  },
+  {
+    id: 'basic-chicken-curry',
+    name: 'Basic Chicken Curry',
+    subtitle: 'Simple, honest chicken curry — a foundation recipe',
+    category: 'meat',
+    tags: ['chicken', 'simple', 'everyday', 'home cooking'],
+    difficulty: 'Beginner',
+    prepTime: '10 min',
+    cookTime: '35 min',
+    servings: 4,
+    emoji: '🍛',
+    gradient: 'linear-gradient(135deg, #FEF3C7, #D97706)',
+    description: 'The foundational chicken curry — simple, flavorful, and the best starting point before tackling more complex dishes. Once you master this technique, you can make almost any Indian curry.',
+    story: 'Every home cook has a version of this. It\'s not flashy, but it teaches you the fundamental technique of Indian cooking: tempering whole spices, building the onion base, cooking the masala, and adding protein.',
+    whatItTastes: 'Warm, earthy, gently spiced — the essential flavor of home-cooked Indian chicken curry. Honest and deeply satisfying.',
+    ingredients: [
+      { amount: '700g', item: 'chicken', note: 'bone-in pieces or boneless thighs' },
+      { amount: '3 tbsp', item: 'oil or ghee' },
+      { amount: '2 large', item: 'onions', note: 'finely chopped' },
+      { amount: '1.5 tbsp', item: 'ginger-garlic paste' },
+      { amount: '3 medium', item: 'tomatoes', note: 'chopped' },
+      { amount: '1 tsp', item: 'cumin seeds' },
+      { amount: '1 tsp', item: 'turmeric' },
+      { amount: '2 tsp', item: 'coriander powder' },
+      { amount: '1 tsp', item: 'red chili powder' },
+      { amount: '1 tsp', item: 'garam masala' },
+      { amount: '1.5 tsp', item: 'salt' },
+      { amount: '—', item: 'fresh cilantro to garnish' }
+    ],
+    steps: [
+      { step: 1, title: 'Temper and cook onions', instruction: 'Heat oil in a heavy pot over medium heat. Add cumin seeds and let sizzle 30 seconds. Add onions and cook 12–15 minutes, stirring regularly, until deep golden. Don\'t rush this step.' },
+      { step: 2, title: 'Ginger-garlic and tomatoes', instruction: 'Add ginger-garlic paste, cook 2 minutes. Add tomatoes, turmeric, coriander, and red chili powder. Cook over medium heat 10–12 minutes, stirring frequently, until tomatoes break down completely and oil separates from the masala.' },
+      { step: 3, title: 'Add and brown the chicken', instruction: 'Add chicken pieces and stir to coat with the masala. Cook on medium-high heat for 8–10 minutes, turning occasionally, until the chicken gets some color. This browning step adds flavor.' },
+      { step: 4, title: 'Add water and simmer', instruction: 'Add 1 cup water. Bring to a boil, then reduce heat, cover, and simmer 20–25 minutes until chicken is completely cooked through (juices run clear). Bone-in pieces need more time than boneless.' },
+      { step: 5, title: 'Finish', instruction: 'Add garam masala, taste and adjust salt. Simmer uncovered 5 minutes to thicken. Garnish with cilantro.' }
+    ],
+    tips: ['Brown onions are the flavor foundation — don\'t skip proper cooking time.', 'The oil separating from the masala tells you the tomatoes are fully cooked.', 'Bone-in chicken has more flavor but takes longer to cook.', 'This basic technique works with lamb, shrimp, or any protein.'],
+    serving: 'Serve with steamed basmati rice or roti. Excellent with a side of raita to cool things down.',
+    spicesUsed: ['cumin-seeds', 'turmeric', 'coriander', 'red-chili-powder', 'garam-masala'],
+    image: null
+  },
+  {
+    id: 'lamb-rogan-josh',
+    name: 'Lamb Rogan Josh',
+    subtitle: 'Fragrant Kashmiri-style braised lamb curry',
+    category: 'meat',
+    tags: ['lamb', 'kashmiri', 'aromatic', 'slow cook'],
+    difficulty: 'Intermediate',
+    prepTime: '15 min',
+    cookTime: '75 min',
+    servings: 4,
+    emoji: '🥩',
+    gradient: 'linear-gradient(135deg, #FCA5A5, #991B1B)',
+    description: 'A signature dish of Kashmiri cuisine — slow-braised lamb infused with whole spices and colored a magnificent red from Kashmiri chilies. "Rogan" means clarified butter; "Josh" means passionate or intense in Urdu.',
+    story: 'Rogan josh came to Kashmir from Persia via the Mughal emperors. The authentic Kashmiri version uses no onions or tomatoes — just spices and yogurt. This recipe uses a simplified approach accessible to home cooks.',
+    whatItTastes: 'Deeply aromatic, richly spiced, with the slow-cooked lamb falling off the bone. Fragrant with whole spices and a beautiful deep-red color. Complex and magnificent.',
+    ingredients: [
+      { amount: '1 kg (2 lb)', item: 'bone-in lamb shoulder', note: 'cut into chunks' },
+      { amount: '4 tbsp', item: 'oil or ghee' },
+      { amount: '2 large', item: 'onions', note: 'finely chopped' },
+      { amount: '1 tbsp', item: 'ginger-garlic paste' },
+      { amount: '1 cup', item: 'full-fat yogurt', note: 'whisked smooth' },
+      { amount: '3 tsp', item: 'Kashmiri red chili powder', note: 'for color' },
+      { amount: '2 tsp', item: 'coriander powder' },
+      { amount: '1 tsp', item: 'turmeric' },
+      { amount: '1 tsp', item: 'fennel powder', note: 'key Kashmiri flavor' },
+      { amount: '1 tsp', item: 'garam masala' },
+      { amount: '—', item: 'Whole Spices:' },
+      { amount: '2', item: 'bay leaves' },
+      { amount: '3', item: 'green cardamom pods' },
+      { amount: '1', item: 'black cardamom pod' },
+      { amount: '1-inch', item: 'cinnamon stick' },
+      { amount: '4', item: 'cloves' },
+      { amount: '1 tsp', item: 'black peppercorns' }
+    ],
+    steps: [
+      { step: 1, title: 'Temper whole spices', instruction: 'Heat ghee in a heavy pot or Dutch oven over medium-high heat until very hot. Add all whole spices and let them sizzle and bloom for 1 minute until aromatic.' },
+      { step: 2, title: 'Brown the lamb', instruction: 'Add lamb pieces and sear on all sides over high heat for 8–10 minutes until well browned. Remove lamb, set aside. Brown onions in the same pot for 12–15 minutes until deep golden.' },
+      { step: 3, title: 'Build the masala', instruction: 'Add ginger-garlic paste, cook 2 minutes. Reduce to low heat. Add all ground spices. Stir for 1 minute. Add whisked yogurt very slowly (a tablespoon at a time), stirring constantly so it doesn\'t curdle. This takes 3–4 minutes.' },
+      { step: 4, title: 'Braise the lamb', instruction: 'Return lamb to pot. Add 1 cup water. Stir, bring to a boil, then reduce to the lowest heat. Cover tightly and braise for 60 minutes, stirring every 20 minutes. The lamb should be very tender and the sauce thickened and fragrant.' },
+      { step: 5, title: 'Finish', instruction: 'Add garam masala, taste for salt. If sauce is thin, simmer uncovered for 10 minutes to reduce. The oil will float to the top — this is traditional and can be spooned off.' }
+    ],
+    tips: ['Bone-in lamb is mandatory here — the marrow enriches the sauce.', 'Add yogurt slowly and off high heat to prevent curdling.', 'Fennel seeds/powder is a distinctly Kashmiri ingredient — don\'t substitute.', 'This is even better the next day; reheat gently.'],
+    serving: 'Serve with steamed basmati rice or naan. A cucumber raita is a traditional accompaniment. Also served with sheermal (saffron flatbread) in Kashmiri cuisine.',
+    spicesUsed: ['kashmiri-chili', 'coriander', 'turmeric', 'fennel-seeds', 'garam-masala', 'green-cardamom', 'black-cardamom', 'bay-leaves', 'cinnamon', 'cloves', 'black-pepper'],
+    image: null
+  },
+  {
+    id: 'chicken-biryani',
+    name: 'Chicken Biryani',
+    subtitle: 'Layered, fragrant rice and chicken celebration dish',
+    category: 'meat',
+    tags: ['chicken', 'rice', 'celebration', 'complex', 'layered'],
+    difficulty: 'Advanced',
+    prepTime: '30 min + 2 hr marinate',
+    cookTime: '60 min',
+    servings: 6,
+    emoji: '🍚',
+    gradient: 'linear-gradient(135deg, #FDE68A, #CA8A04)',
+    description: 'The crown jewel of Indian rice dishes. Layers of fragrant saffron-scented basmati rice and marinated chicken sealed and cooked together (dum) so the steam and flavors meld into something transcendent.',
+    story: 'Biryani has a complex history traveling from Persia to India with the Mughals. Each region — Hyderabad, Lucknow, Kolkata, Kerala — has its own version with different techniques and spices. This is a home-cook-friendly version of the classic.',
+    whatItTastes: 'Complex, layered, fragrant with whole spices and saffron. The rice is fluffy and perfectly cooked; the chicken is moist and deeply spiced. Every bite has a different combination of flavors.',
+    ingredients: [
+      { amount: '700g', item: 'chicken', note: 'bone-in pieces or boneless thighs' },
+      { amount: '2 cups', item: 'basmati rice', note: 'soaked 30 minutes' },
+      { amount: '—', item: '— Chicken Marinade —' },
+      { amount: '¾ cup', item: 'yogurt' },
+      { amount: '2 tbsp', item: 'ginger-garlic paste' },
+      { amount: '1 tsp', item: 'red chili powder' },
+      { amount: '1 tsp', item: 'garam masala' },
+      { amount: '½ tsp', item: 'turmeric' },
+      { amount: '2 tsp', item: 'biryani masala', note: 'or mix below' },
+      { amount: '1 tsp', item: 'salt' },
+      { amount: '—', item: '— Biryani Base —' },
+      { amount: '4 tbsp', item: 'ghee or oil' },
+      { amount: '3 large', item: 'onions', note: 'thinly sliced — will be fried crispy' },
+      { amount: '—', item: '— Rice Layer —' },
+      { amount: '4 cups', item: 'water' },
+      { amount: '2', item: 'bay leaves' },
+      { amount: '4', item: 'green cardamom' },
+      { amount: '1-inch', item: 'cinnamon' },
+      { amount: '4', item: 'cloves' },
+      { amount: '1', item: 'black cardamom' },
+      { amount: '1 tsp', item: 'cumin seeds' },
+      { amount: '1 tbsp', item: 'salt' },
+      { amount: '—', item: '— Finishing —' },
+      { amount: '¼ tsp', item: 'saffron', note: 'soaked in 3 tbsp warm milk' },
+      { amount: '2 tbsp', item: 'ghee' },
+      { amount: '2 tbsp', item: 'fresh mint leaves' }
+    ],
+    steps: [
+      { step: 1, title: 'Marinate the chicken', instruction: 'Combine chicken with all marinade ingredients. Mix well and refrigerate for 2–4 hours minimum.' },
+      { step: 2, title: 'Make crispy fried onions (birista)', instruction: 'Heat oil in a wide pan over medium-high heat. Fry sliced onions in batches until deep golden-brown and crispy — about 12–15 minutes. Drain on paper towels. These are the biryani\'s signature garnish and flavor element. Reserve half for cooking, half for garnish.' },
+      { step: 3, title: 'Cook the chicken', instruction: 'In a heavy, wide pot, heat 2 tbsp ghee. Add marinated chicken and cook over high heat for 5 minutes, browning it. Add half the fried onions and ¼ cup water. Cover and cook on low heat for 20 minutes until chicken is 80% cooked. Set aside.' },
+      { step: 4, title: 'Parboil the rice (70% cooked)', instruction: 'Bring 4 cups well-salted water to a boil with all whole spices. Add soaked, drained rice. Cook on high for 5–6 minutes until the rice is 70% cooked (still has a white core when you bite one). Drain immediately.' },
+      { step: 5, title: 'Layer the biryani', instruction: 'In the same heavy pot with the chicken, layer half the parboiled rice over the chicken. Drizzle half the saffron milk. Layer remaining rice, drizzle remaining saffron milk. Sprinkle mint and remaining fried onions. Drizzle ghee over the top.' },
+      { step: 6, title: 'Dum cooking (seal and steam)', instruction: 'Seal the pot tightly with foil and then the lid. Cook on HIGH heat for 5 minutes, then reduce to the LOWEST possible heat and cook for 20–25 minutes. This slow steam (dum) finishes the rice perfectly and melds all the flavors together. Let rest 10 minutes before opening.' }
+    ],
+    tips: [
+      'Soaking rice for 30 minutes is mandatory — the grains need to be elongated and separate.',
+      'Parboiling rice to only 70% is critical — it will finish cooking in the dum phase.',
+      'The dum (sealed steam cooking) is non-negotiable — it\'s what makes biryani biryani.',
+      'Crispy fried onions (birista) can be made in advance and stored for days.',
+      'Don\'t open the pot during dum cooking — you\'ll release the steam that\'s cooking the rice.',
+      'Let biryani rest 10 minutes sealed before opening — the layers settle perfectly.'
+    ],
+    serving: 'Serve with raita (cucumber yogurt), mirchi ka salan (chili curry), and a boiled egg cut in half. Use a large spoon to serve, scooping from the bottom up to get both rice and chicken in each serving.',
+    spicesUsed: ['saffron', 'green-cardamom', 'black-cardamom', 'cinnamon', 'cloves', 'bay-leaves', 'cumin-seeds', 'garam-masala', 'turmeric'],
+    image: null
+  },
+  {
+    id: 'keema-matar',
+    name: 'Keema Matar',
+    subtitle: 'Spiced ground meat with peas',
+    category: 'meat',
+    tags: ['chicken', 'lamb', 'ground meat', 'quick', 'everyday'],
+    difficulty: 'Beginner',
+    prepTime: '10 min',
+    cookTime: '30 min',
+    servings: 4,
+    emoji: '🫛',
+    gradient: 'linear-gradient(135deg, #BBF7D0, #374151)',
+    description: 'Spiced ground meat (lamb or chicken) with green peas — quick, hearty, and deeply flavorful. One of the fastest meat dishes in Indian cooking.',
+    story: 'Keema (ground meat) dishes are the weeknight staple of meat-eating families across North India and Pakistan. Quick to cook, very flavorful, and incredibly versatile.',
+    whatItTastes: 'Boldly spiced, hearty, with the sweetness of peas cutting through the rich meat. Simpler and faster than a gravy curry but just as satisfying.',
+    ingredients: [
+      { amount: '500g (1 lb)', item: 'ground lamb or chicken' },
+      { amount: '1 cup', item: 'frozen peas' },
+      { amount: '2 tbsp', item: 'oil' },
+      { amount: '2 medium', item: 'onions', note: 'finely chopped' },
+      { amount: '1 tbsp', item: 'ginger-garlic paste' },
+      { amount: '2 medium', item: 'tomatoes', note: 'chopped' },
+      { amount: '1 tsp', item: 'cumin seeds' },
+      { amount: '½ tsp', item: 'turmeric' },
+      { amount: '1 tsp', item: 'coriander powder' },
+      { amount: '1 tsp', item: 'red chili powder' },
+      { amount: '1 tsp', item: 'garam masala' },
+      { amount: '1 tsp', item: 'salt' }
+    ],
+    steps: [
+      { step: 1, title: 'Cook onions', instruction: 'Heat oil. Sizzle cumin seeds. Cook onions 8–10 minutes until golden. Add ginger-garlic paste, 2 minutes.' },
+      { step: 2, title: 'Add tomatoes and spices', instruction: 'Add tomatoes, turmeric, coriander, and chili powder. Cook 8 minutes until thick.' },
+      { step: 3, title: 'Brown the meat', instruction: 'Add ground meat. Break it apart with a spoon. Cook on high heat for 5–7 minutes, stirring to break up clumps, until completely browned and no pink remains.' },
+      { step: 4, title: 'Add peas and finish', instruction: 'Add peas and ¼ cup water. Simmer covered for 10 minutes. Add garam masala, taste for salt.' }
+    ],
+    tips: ['Break meat into very fine pieces while cooking — no large clumps.', 'Drain excess fat from lamb keema if there\'s a lot.', 'Add a beaten egg at the end (with lid on, just turn off heat) for a richer version.', 'Great stuffed into parathas or pitas.'],
+    serving: 'Serve with roti or rice. Also excellent as a filling for stuffed parathas or samosas.',
+    spicesUsed: ['cumin-seeds', 'turmeric', 'coriander', 'red-chili-powder', 'garam-masala'],
+    image: null
+  },
+  {
+    id: 'lamb-korma',
+    name: 'Lamb Korma',
+    subtitle: 'Mughal-style lamb in a rich, mild nut-cream sauce',
+    category: 'meat',
+    tags: ['lamb', 'mild', 'rich', 'mughlai', 'celebration'],
+    difficulty: 'Intermediate',
+    prepTime: '20 min',
+    cookTime: '75 min',
+    servings: 4,
+    emoji: '🥩',
+    gradient: 'linear-gradient(135deg, #FDE68A, #D97706)',
+    description: 'Lamb braised in a luxuriously rich sauce of onions, yogurt, and ground cashews or almonds. This is Mughal palace cooking — mild, aromatic, and deeply indulgent.',
+    story: 'Korma is a braising technique originating in the Mughal courts of Delhi. The richness comes from nuts and yogurt rather than tomatoes. The spicing is warm and aromatic rather than fiery.',
+    whatItTastes: 'Mild, rich, nutty, and deeply aromatic. The lamb is fork-tender and the sauce is velvety. Elegant and complex.',
+    ingredients: [
+      { amount: '700g', item: 'bone-in lamb', note: 'or chicken thighs' },
+      { amount: '4 tbsp', item: 'ghee or oil' },
+      { amount: '3 large', item: 'onions', note: 'thinly sliced, will be fried' },
+      { amount: '1.5 tbsp', item: 'ginger-garlic paste' },
+      { amount: '¾ cup', item: 'full-fat yogurt', note: 'whisked smooth' },
+      { amount: '½ cup', item: 'cashews or blanched almonds', note: 'soaked 30 min, blended with water to paste' },
+      { amount: '½ cup', item: 'heavy cream' },
+      { amount: '—', item: 'Whole Spices:' },
+      { amount: '4', item: 'green cardamom pods' },
+      { amount: '1-inch', item: 'cinnamon' },
+      { amount: '4', item: 'cloves' },
+      { amount: '1', item: 'bay leaf' },
+      { amount: '—', item: 'Ground Spices:' },
+      { amount: '1 tsp', item: 'coriander powder' },
+      { amount: '½ tsp', item: 'cumin powder' },
+      { amount: '½ tsp', item: 'turmeric' },
+      { amount: '½ tsp', item: 'white pepper or black pepper' },
+      { amount: '½ tsp', item: 'garam masala' },
+      { amount: '¼ tsp', item: 'saffron', note: 'soaked in 2 tbsp warm milk' }
+    ],
+    steps: [
+      { step: 1, title: 'Fry onions until deep golden', instruction: 'Heat ghee and fry sliced onions until they are deep golden brown and beginning to caramelize — 15–18 minutes. Remove half and set aside (for garnish). Add ginger-garlic paste to remaining onions, cook 2 min.' },
+      { step: 2, title: 'Add spices and meat', instruction: 'Add whole spices and all ground spices to the pot. Stir 1 minute. Add lamb pieces, sear 5–8 minutes until browned.' },
+      { step: 3, title: 'Add yogurt slowly', instruction: 'Reduce heat to low. Add whisked yogurt one tablespoon at a time, stirring constantly between each addition. This prevents curdling. Stir and cook 5 minutes after all yogurt is added.' },
+      { step: 4, title: 'Add nut paste and braise', instruction: 'Add the cashew/almond paste and stir to combine. Add ½ cup water. Cover and braise on the lowest heat for 50–60 minutes, stirring every 15 minutes, until lamb is very tender.' },
+      { step: 5, title: 'Finish with cream and saffron', instruction: 'Stir in cream and saffron milk. Add garam masala. Simmer 5 minutes. Taste for salt.' }
+    ],
+    tips: ['Nut paste is what gives korma its distinctive richness — don\'t skip.', 'Add yogurt very slowly on low heat to prevent curdling.', 'Rose water (1 tsp) added at the end is traditional in Mughlai korma.', 'This is meant to be mild — it\'s about richness and aromatics, not chili heat.'],
+    serving: 'Serve with fragrant basmati rice or naan. Garnish with the reserved fried onions, a few soaked saffron threads, and chopped pistachios.',
+    spicesUsed: ['green-cardamom', 'cinnamon', 'cloves', 'bay-leaves', 'coriander', 'garam-masala', 'saffron', 'black-pepper'],
+    image: null
+  },
+  {
+    id: 'tandoori-chicken',
+    name: 'Tandoori Chicken (Oven Method)',
+    subtitle: 'Yogurt-marinated chicken roasted high and hot',
+    category: 'meat',
+    tags: ['chicken', 'grilled', 'marinated', 'starter', 'party'],
+    difficulty: 'Beginner',
+    prepTime: '15 min + overnight marinate',
+    cookTime: '30 min',
+    servings: 4,
+    emoji: '🍗',
+    gradient: 'linear-gradient(135deg, #FCA5A5, #B91C1C)',
+    description: 'Chicken marinated in yogurt and spices, then roasted at the highest possible oven temperature to simulate a clay tandoor. Juicy inside, slightly charred outside, and magnificently colored.',
+    story: 'Tandoori chicken was created at Moti Mahal restaurant in Peshawar (now Pakistan) in the 1940s. The brilliant red color comes from Kashmiri chili powder, not food coloring. Without a tandoor, a very hot oven with the broiler finishing is the home kitchen equivalent.',
+    whatItTastes: 'Smoky, charred exterior with juicy, yogurt-tenderized meat inside. Boldly spiced, slightly tangy from the yogurt, and irresistible. The lemon juice finish is essential.',
+    ingredients: [
+      { amount: '1 whole chicken', item: 'or 8 bone-in pieces (legs + thighs)', note: 'scored deeply with a knife' },
+      { amount: '—', item: '— Marinade (1st) —' },
+      { amount: '2 tbsp', item: 'lemon juice' },
+      { amount: '1 tsp', item: 'salt' },
+      { amount: '1 tsp', item: 'red chili powder' },
+      { amount: '—', item: '— Marinade (2nd) —' },
+      { amount: '¾ cup', item: 'full-fat yogurt' },
+      { amount: '2 tbsp', item: 'oil' },
+      { amount: '1.5 tbsp', item: 'ginger-garlic paste' },
+      { amount: '2 tsp', item: 'Kashmiri red chili powder', note: 'the color spice' },
+      { amount: '1 tsp', item: 'cumin powder' },
+      { amount: '1 tsp', item: 'coriander powder' },
+      { amount: '1 tsp', item: 'garam masala' },
+      { amount: '½ tsp', item: 'turmeric' },
+      { amount: '1 tsp', item: 'salt' }
+    ],
+    steps: [
+      { step: 1, title: 'Score and first marinade', instruction: 'Score the chicken pieces deeply with diagonal cuts all the way to the bone. This is essential — the marinade must reach the bone or it\'s only surface flavored. Rub all over with the first marinade (lemon, salt, chili). Rest 30 minutes.' },
+      { step: 2, title: 'Second marinade', instruction: 'Mix all second marinade ingredients. Rub aggressively into the chicken, getting into all the cuts. Cover and refrigerate overnight (minimum 4 hours). The longer, the better — overnight is ideal.' },
+      { step: 3, title: 'Bring to room temperature', instruction: 'Remove chicken from fridge 30 minutes before cooking. Cold chicken going into a hot oven cooks unevenly.' },
+      { step: 4, title: 'Roast at maximum heat', instruction: 'Preheat oven to its maximum temperature (500°F/260°C or as high as it goes). Place chicken on a wire rack over a baking sheet. Roast for 20 minutes. Then switch to broil for 5–7 minutes until the edges char slightly and look properly "tandoori."' },
+      { step: 5, title: 'Rest and serve', instruction: 'Rest the cooked chicken for 5 minutes. Squeeze lemon juice over it immediately before serving.' }
+    ],
+    tips: ['Deep scoring is the most critical step — shallow cuts won\'t let the marinade reach the bone.', 'Overnight marinating is the difference between good and great.', 'Maximum oven temperature is essential — 375°F won\'t give you proper tandoori char.', 'The broiler at the end creates the char that defines tandoori.', 'Red food coloring is never needed — Kashmiri chili gives natural deep color.'],
+    serving: 'Serve on a platter with sliced raw onion (separated into rings), lemon halves, and green mint chutney for dipping. Naan on the side. This is classic as a starter before a main curry.',
+    spicesUsed: ['kashmiri-chili', 'cumin-seeds', 'coriander', 'garam-masala', 'turmeric'],
+    image: null
+  }
+];

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe — Indian Food Guide</title>
+  <meta name="description" content="Step-by-step Indian recipe with beginner-friendly instructions.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ── Navigation ── -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="nav-logo" href="index.html"><span>🍛</span> Indian Food Guide</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html"       class="nav-link">Home</a></li>
+      <li><a href="spices.html"      class="nav-link">Spices</a></li>
+      <li><a href="ingredients.html" class="nav-link">Ingredients</a></li>
+      <li><a href="recipes.html"     class="nav-link">Recipes</a></li>
+    </ul>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── Recipe Hero ── -->
+<div class="recipe-hero" id="recipe-hero">
+  <div class="recipe-hero-overlay"></div>
+  <div class="recipe-hero-emoji" aria-hidden="true">🍛</div>
+  <div class="container recipe-hero-content">
+    <div style="margin-bottom:8px">
+      <a href="recipes.html" style="color:rgba(255,255,255,0.7);font-size:0.85rem;font-weight:500">← All Recipes</a>
+    </div>
+    <h1 id="recipe-title">Loading…</h1>
+    <div class="recipe-hero-subtitle" id="recipe-subtitle"></div>
+  </div>
+</div>
+
+<!-- ── Main Content ── -->
+<div id="recipe-container">
+  <div class="container">
+
+    <!-- Meta strip -->
+    <div class="recipe-meta-strip" id="recipe-meta">
+      <!-- Rendered by recipe-detail.js -->
+    </div>
+
+    <!-- Tags -->
+    <div id="recipe-tags" class="spice-detail-uses mb-24"></div>
+
+    <!-- Story -->
+    <blockquote class="recipe-story" id="recipe-story"></blockquote>
+
+    <!-- Taste box -->
+    <div class="taste-box mb-32">
+      <div class="taste-box-label">✦ What does this taste like?</div>
+      <p id="taste-description"></p>
+    </div>
+
+    <!-- Two-column layout -->
+    <div class="recipe-layout">
+
+      <!-- Ingredients column (sticky) -->
+      <aside>
+        <div class="recipe-ingredients">
+          <h3>🛒 Ingredients</h3>
+          <div class="ingredient-list" id="ingredients-list">
+            <!-- Rendered by recipe-detail.js -->
+          </div>
+        </div>
+
+        <!-- Spices used -->
+        <div style="margin-top:20px">
+          <div style="font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--saffron);margin-bottom:8px">
+            Spices Used
+          </div>
+          <div class="spices-used" id="spices-used">
+            <!-- Rendered by recipe-detail.js -->
+          </div>
+        </div>
+
+        <!-- Print button -->
+        <div style="margin-top:24px">
+          <button onclick="window.print()" class="btn btn-outline" style="width:100%;justify-content:center;background:var(--light);color:var(--brown);border:1px solid var(--border)">
+            🖨️ Print Recipe
+          </button>
+        </div>
+      </aside>
+
+      <!-- Steps column -->
+      <section>
+        <h2 style="margin-bottom:28px;font-size:1.4rem">Step-by-Step Instructions</h2>
+        <div class="steps-list" id="steps-list">
+          <!-- Rendered by recipe-detail.js -->
+        </div>
+
+        <!-- Tips -->
+        <div class="tips-section">
+          <h3 style="font-size:1rem;margin-bottom:4px">⭐ Tips for Success</h3>
+          <ul class="tips-list" id="tips-list">
+            <!-- Rendered by recipe-detail.js -->
+          </ul>
+        </div>
+
+        <!-- Serving suggestions -->
+        <div class="serving-box">
+          <div class="serving-box-label">🍽️ How to Serve</div>
+          <p id="serving-text"></p>
+        </div>
+
+      </section>
+    </div>
+
+    <!-- Back link -->
+    <div style="margin-top:48px;padding-top:32px;border-top:1px solid var(--border);text-align:center">
+      <a href="recipes.html" class="btn btn-primary">← Back to All Recipes</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- ── Footer ── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">🍛 Indian Food Guide</div>
+        <div class="footer-tagline">A beginner-friendly reference for Indian cooking.</div>
+      </div>
+      <div>
+        <div class="footer-heading">Navigate</div>
+        <ul class="footer-links">
+          <li><a href="recipes.html"     class="footer-link">All Recipes</a></li>
+          <li><a href="spices.html"      class="footer-link">Spices</a></li>
+          <li><a href="ingredients.html" class="footer-link">Ingredients</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">Indian Food Guide</div>
+  </div>
+</footer>
+
+<script src="data/spices.js"></script>
+<script src="data/recipes.js"></script>
+<script src="js/app.js"></script>
+<script src="js/recipe-detail.js"></script>
+</body>
+</html>

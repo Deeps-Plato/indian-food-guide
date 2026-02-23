@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spice Encyclopedia — Indian Food Guide</title>
+  <meta name="description" content="Learn all 22 essential Indian spices — what they taste like, how to use them, and beginner tips for each one.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ── Navigation ── -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="nav-logo" href="index.html"><span>🍛</span> Indian Food Guide</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html"       class="nav-link">Home</a></li>
+      <li><a href="spices.html"      class="nav-link">Spices</a></li>
+      <li><a href="ingredients.html" class="nav-link">Ingredients</a></li>
+      <li><a href="recipes.html"     class="nav-link">Recipes</a></li>
+    </ul>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── Page Hero ── -->
+<div class="page-hero">
+  <div class="container">
+    <h1>🌶️ Spice Encyclopedia</h1>
+    <p>22 essential Indian spices — what they taste like, when to use them, and exactly how much to add.</p>
+  </div>
+</div>
+
+<!-- ── Main Content ── -->
+<main class="page-content">
+  <div class="container">
+
+    <!-- Filter Bar -->
+    <div class="filter-bar">
+      <div class="search-wrap">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input
+          type="search"
+          id="spice-search"
+          class="search-input"
+          placeholder="Search spices…"
+          aria-label="Search spices"
+        >
+      </div>
+      <div class="filter-pills" id="category-pills" role="group" aria-label="Filter by category">
+        <button class="pill active" data-category="all">All (22)</button>
+        <button class="pill" data-category="Seeds & Whole">Seeds & Whole</button>
+        <button class="pill" data-category="Ground">Ground</button>
+        <button class="pill" data-category="Blends">Blends</button>
+        <button class="pill" data-category="Fresh">Fresh</button>
+      </div>
+    </div>
+
+    <div class="results-count" id="results-count" aria-live="polite">22 spices</div>
+
+    <!-- Spice Card Grid -->
+    <div class="card-grid" id="spice-grid" aria-label="Spice cards">
+      <!-- Rendered by spices-page.js -->
+      <div class="empty-state" style="grid-column:1/-1">
+        <div class="empty-state-icon">⏳</div>
+        <p>Loading spices…</p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<!-- ── Footer ── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">🍛 Indian Food Guide</div>
+        <div class="footer-tagline">A beginner-friendly reference for Indian cooking.</div>
+      </div>
+      <div>
+        <div class="footer-heading">Navigate</div>
+        <ul class="footer-links">
+          <li><a href="index.html"       class="footer-link">Home</a></li>
+          <li><a href="ingredients.html" class="footer-link">Ingredients</a></li>
+          <li><a href="recipes.html"     class="footer-link">Recipes</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">Indian Food Guide — Click any spice card to expand details.</div>
+  </div>
+</footer>
+
+<script src="data/spices.js"></script>
+<script src="js/app.js"></script>
+<script src="js/spices-page.js"></script>
+</body>
+</html>
