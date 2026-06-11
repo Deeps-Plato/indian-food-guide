@@ -281,6 +281,7 @@ p:last-child { margin-bottom: 0; }
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
   gap: 28px;
+  align-items: start;
 }
 .card-grid-sm {
   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
@@ -307,7 +308,8 @@ p:last-child { margin-bottom: 0; }
   box-shadow: var(--shadow-lg);
 }
 .spice-card-header {
-  height: 200px;
+  aspect-ratio: 4 / 3;
+  min-height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -386,6 +388,13 @@ p:last-child { margin-bottom: 0; }
   box-shadow: var(--shadow-md);
 }
 .spice-detail.open { display: block; }
+.spice-detail-photo {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  margin-bottom: 18px;
+}
 .spice-detail-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -446,7 +455,8 @@ p:last-child { margin-bottom: 0; }
   color: inherit;
 }
 .recipe-card-header {
-  height: 240px;
+  aspect-ratio: 16 / 10;
+  min-height: 240px;
   display: flex;
   align-items: center;
   justify-content: center;

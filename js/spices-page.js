@@ -84,6 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function buildDetail(spice) {
     return `
+      ${spice.image ? `<img class="spice-detail-photo" src="${spice.image}" alt="${spice.name}" loading="lazy">` : ''}
       <div class="spice-detail-grid">
         <div>
           <div class="spice-detail-label">Taste</div>
