@@ -65,4 +65,7 @@ That's it — the site will automatically show the photo instead of the gradient
 `matar-paneer`, `dal-makhani`, `bhindi-masala`, `baingan-bharta`, `aloo-paratha`,
 `butter-chicken`, `chicken-tikka-masala`, `basic-chicken-curry`,
 `lamb-rogan-josh`, `chicken-biryani`, `keema-matar`, `lamb-korma`,
-`tandoori-chicken`
+`tandoori-chicken`,
+`masala-dosa`, `idli`, `sambar`, `coconut-chutney`, `medu-vada`, `upma`,
+`veg-momos`, `hakka-noodles`, `chicken-65`, `chicken-lollipop`,
+`gobi-manchurian`, `chilli-paneer`

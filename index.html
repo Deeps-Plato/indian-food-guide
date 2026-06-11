@@ -12,7 +12,7 @@
   <meta property="og:image" content="https://deeps-plato.github.io/indian-food-guide/images/recipes/dal-tadka.jpg">
   <meta property="og:url" content="https://deeps-plato.github.io/indian-food-guide/">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍛</text></svg>">
-  <link rel="stylesheet" href="css/style.css?v=20260611">
+  <link rel="stylesheet" href="css/style.css?v=20260611b">
 </head>
 <body>
 
@@ -52,7 +52,8 @@
     <div class="hero-stats">
       <div class="hero-stat"><span class="hero-stat-num">22</span><span class="hero-stat-label">Spices</span></div>
       <div class="hero-stat"><span class="hero-stat-num">17</span><span class="hero-stat-label">Ingredients</span></div>
-      <div class="hero-stat"><span class="hero-stat-num">18</span><span class="hero-stat-label">Recipes</span></div>
+      <div class="hero-stat"><span class="hero-stat-num">30</span><span class="hero-stat-label">Recipes</span></div>
+      <div class="hero-stat"><span class="hero-stat-num">3</span><span class="hero-stat-label">Cuisines</span></div>
     </div>
   </div>
 </section>
@@ -81,7 +82,7 @@
       <div class="how-step">
         <div class="how-step-num">3</div>
         <h3>Cook a Recipe</h3>
-        <p>18 recipes with beginner-friendly, detailed instructions. Start with Dal Tadka and build from there.</p>
+        <p>30 recipes across North Indian, South Indian, and Indo-Chinese cooking. Start with Dal Tadka and build from there.</p>
         <a href="recipes.html" class="btn btn-sm btn-primary" style="margin-top:12px">All Recipes →</a>
       </div>
     </div>
@@ -99,7 +100,44 @@
     <div id="featured-spotlight"></div>
     <div class="card-grid" id="featured-recipes"></div>
     <div class="text-center mt-32">
-      <a href="recipes.html" class="btn btn-primary">View All 18 Recipes →</a>
+      <a href="recipes.html" class="btn btn-primary">View All 30 Recipes →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Explore by Cuisine ── -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Three Kitchens</div>
+      <h2>Explore by Cuisine</h2>
+      <p>From North Indian curries to South Indian breakfasts to the wok-fired street food of Indo-Chinese cooking.</p>
+    </div>
+    <div class="cuisine-grid">
+      <a class="cuisine-tile" href="recipes.html?cuisine=north">
+        <img src="images/recipes/lamb-rogan-josh.jpg" alt="North Indian — Lamb Rogan Josh" loading="lazy">
+        <div class="cuisine-tile-overlay"></div>
+        <div class="cuisine-tile-body">
+          <h3>North Indian</h3>
+          <p>Rich curries, dals, tandoor &amp; breads — 18 recipes</p>
+        </div>
+      </a>
+      <a class="cuisine-tile" href="recipes.html?cuisine=south">
+        <img src="images/recipes/masala-dosa.jpg" alt="South Indian — Masala Dosa" loading="lazy">
+        <div class="cuisine-tile-overlay"></div>
+        <div class="cuisine-tile-body">
+          <h3>South Indian</h3>
+          <p>Dosa, idli, sambar &amp; chutneys — 6 recipes</p>
+        </div>
+      </a>
+      <a class="cuisine-tile" href="recipes.html?cuisine=indo-chinese">
+        <img src="images/recipes/veg-momos.jpg" alt="Indo-Chinese — Momos" loading="lazy">
+        <div class="cuisine-tile-overlay"></div>
+        <div class="cuisine-tile-body">
+          <h3>Indo-Chinese</h3>
+          <p>Momos, hakka noodles &amp; chicken 65 — 6 recipes</p>
+        </div>
+      </a>
     </div>
   </div>
 </section>
@@ -214,9 +252,9 @@
   </div>
 </footer>
 
-<script src="data/spices.js?v=20260611"></script>
-<script src="data/recipes.js?v=20260611"></script>
-<script src="js/app.js?v=20260611"></script>
+<script src="data/spices.js?v=20260611b"></script>
+<script src="data/recipes.js?v=20260611b"></script>
+<script src="js/app.js?v=20260611b"></script>
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const SPOTLIGHT_ID = 'dal-tadka';

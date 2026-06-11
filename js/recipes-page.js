@@ -3,17 +3,30 @@
    ============================================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
-  const grid       = document.getElementById('recipe-grid');
-  const searchEl   = document.getElementById('recipe-search');
-  const catPills   = document.getElementById('category-pills');
-  const diffPills  = document.getElementById('difficulty-pills');
-  const countEl    = document.getElementById('results-count');
+  const grid         = document.getElementById('recipe-grid');
+  const searchEl     = document.getElementById('recipe-search');
+  const catPills     = document.getElementById('category-pills');
+  const diffPills    = document.getElementById('difficulty-pills');
+  const cuisinePills = document.getElementById('cuisine-pills');
+  const countEl      = document.getElementById('results-count');
 
   if (!grid || !window.RECIPES_DATA) return;
 
   let activeCategory   = 'all';
   let activeDifficulty = 'all';
+  let activeCuisine    = 'all';
   let searchTerm       = '';
+
+  /* Allow deep-linking: recipes.html?cuisine=south */
+  const cuisineParam = new URLSearchParams(window.location.search).get('cuisine');
+  if (cuisineParam && cuisinePills) {
+    const pill = cuisinePills.querySelector(`.pill[data-value="${cuisineParam}"]`);
+    if (pill) {
+      activeCuisine = cuisineParam;
+      cuisinePills.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+    }
+  }
 
   /* ── Filter pill listeners ── */
   function initPills(container, callback) {
@@ -27,8 +40,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  initPills(catPills,  val => { activeCategory   = val; render(); });
-  initPills(diffPills, val => { activeDifficulty = val; render(); });
+  initPills(catPills,     val => { activeCategory   = val; render(); });
+  initPills(diffPills,    val => { activeDifficulty = val; render(); });
+  initPills(cuisinePills, val => { activeCuisine    = val; render(); });
 
   if (searchEl) {
     searchEl.addEventListener('input', debounce(() => {
@@ -49,6 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       if (activeCategory !== 'all' && recipe.category !== activeCategory) return false;
       if (activeDifficulty !== 'all' && recipe.difficulty.toLowerCase() !== activeDifficulty) return false;
+      if (activeCuisine !== 'all' && recipe.cuisine !== activeCuisine) return false;
       return true;
     });
 

@@ -19,3 +19,20 @@ Earlier images were also sourced from Wikipedia/Wikimedia Commons (see git histo
 | `ingredients/masoor-dal.jpg` | [Masoor dal.JPG](https://commons.wikimedia.org/wiki/File:Masoor_dal.JPG) | Rydia | CC BY-SA 2.5 |
 
 `spices/fenugreek-seeds.jpg` was cropped from the previously committed image to remove a scale ruler.
+
+## South Indian & Indo-Chinese recipes (added 2026-06-11)
+
+| Local file | Commons source | Author | License |
+|------------|----------------|--------|---------|
+| `recipes/masala-dosa.jpg` | [Masala dosa 01.jpg](https://commons.wikimedia.org/wiki/File:Masala_dosa_01.jpg) | Marajozkee | CC BY-SA 4.0 |
+| `recipes/idli.jpg` | [Idli Sambar-Noida-UP-SP004.jpg](https://commons.wikimedia.org/wiki/File:Idli_Sambar-Noida-UP-SP004.jpg) | Sutapa Pal | CC BY-SA 4.0 |
+| `recipes/sambar.jpg` | [Indian Sambar.jpg](https://commons.wikimedia.org/wiki/File:Indian_Sambar.jpg) | Samphotography | CC BY-SA 4.0 |
+| `recipes/coconut-chutney.jpg` | [Coconut Chutney (Indian Cuisine).jpg](https://commons.wikimedia.org/wiki/File:Coconut_Chutney_(Indian_Cuisine).jpg) | Balurbala | CC BY-SA 4.0 |
+| `recipes/medu-vada.jpg` | [Medu Vada with chutnies.jpg](https://commons.wikimedia.org/wiki/File:Medu_Vada_with_chutnies.jpg) | Ravi Talwar | CC BY 2.0 |
+| `recipes/upma.jpg` | [Upma South India.JPG](https://commons.wikimedia.org/wiki/File:Upma_South_India.JPG) | Intodustin | CC BY-SA 4.0 |
+| `recipes/veg-momos.jpg` | [A plate of Momos with pickle in Kathmandu 20220223.jpg](https://commons.wikimedia.org/wiki/File:A_plate_of_Momos_with_pickle_in_Kathmandu_20220223.jpg) | Tulsi Bhagat | CC BY-SA 4.0 |
+| `recipes/hakka-noodles.jpg` | [Tasty hakka noodles image.jpg](https://commons.wikimedia.org/wiki/File:Tasty_hakka_noodles_image.jpg) | SGUae | CC BY 4.0 |
+| `recipes/chicken-65.jpg` | [Chicken 65 (Dish).jpg](https://commons.wikimedia.org/wiki/File:Chicken_65_(Dish).jpg) | Amiyashrivastava | CC BY-SA 3.0 |
+| `recipes/chicken-lollipop.jpg` | [Chicken lollipop in Goa.jpg](https://commons.wikimedia.org/wiki/File:Chicken_lollipop_in_Goa.jpg) | Peiling Tan | CC BY 2.0 |
+| `recipes/gobi-manchurian.jpg` | [Gobi manchurian.jpg](https://commons.wikimedia.org/wiki/File:Gobi_manchurian.jpg) | scaredy_kat | CC BY 2.5 |
+| `recipes/chilli-paneer.jpg` | [Chilly Paneer 01.jpg](https://commons.wikimedia.org/wiki/File:Chilly_Paneer_01.jpg) | Marajozkee | CC BY-SA 4.0 |

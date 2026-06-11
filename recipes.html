@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Recipes — Indian Food Guide</title>
-  <meta name="description" content="18 Indian recipes with beginner-friendly step-by-step instructions. Filter by vegetarian, meat, or difficulty level.">
+  <meta name="description" content="30 Indian recipes — North Indian, South Indian, and Indo-Chinese — with beginner-friendly step-by-step instructions. Filter by cuisine, type, or difficulty.">
   <meta name="theme-color" content="#2D1B0E">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍛</text></svg>">
-  <link rel="stylesheet" href="css/style.css?v=20260611">
+  <link rel="stylesheet" href="css/style.css?v=20260611b">
 </head>
 <body>
 
@@ -33,7 +33,7 @@
   <div class="page-hero-overlay"></div>
   <div class="container">
     <h1>📖 All Recipes</h1>
-    <p>18 recipes — 10 vegetarian, 8 meat — each with detailed beginner-friendly instructions.</p>
+    <p>30 recipes across North Indian, South Indian, and Indo-Chinese cooking — each with detailed beginner-friendly instructions.</p>
   </div>
 </div>
 
@@ -57,6 +57,17 @@
       </div>
 
       <div style="display:flex;gap:16px;flex-wrap:wrap">
+        <!-- Cuisine filter -->
+        <div>
+          <div style="font-size:0.72rem;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--saffron);margin-bottom:6px">Cuisine</div>
+          <div class="filter-pills" id="cuisine-pills" role="group" aria-label="Filter by cuisine">
+            <button class="pill active" data-value="all">All</button>
+            <button class="pill" data-value="north">🫓 North Indian</button>
+            <button class="pill" data-value="south">🥥 South Indian</button>
+            <button class="pill" data-value="indo-chinese">🥢 Indo-Chinese</button>
+          </div>
+        </div>
+
         <!-- Category filter -->
         <div>
           <div style="font-size:0.72rem;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--saffron);margin-bottom:6px">Type</div>
@@ -80,7 +91,7 @@
       </div>
     </div>
 
-    <div class="results-count" id="results-count" aria-live="polite">18 recipes</div>
+    <div class="results-count" id="results-count" aria-live="polite">30 recipes</div>
 
     <!-- Recipe Grid -->
     <div class="card-grid" id="recipe-grid" aria-label="Recipe cards">
@@ -122,8 +133,8 @@
   </div>
 </footer>
 
-<script src="data/recipes.js?v=20260611"></script>
-<script src="js/app.js?v=20260611"></script>
-<script src="js/recipes-page.js?v=20260611"></script>
+<script src="data/recipes.js?v=20260611b"></script>
+<script src="js/app.js?v=20260611b"></script>
+<script src="js/recipes-page.js?v=20260611b"></script>
 </body>
 </html>
