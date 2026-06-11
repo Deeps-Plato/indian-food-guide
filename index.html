@@ -96,10 +96,23 @@
       <h2>Featured Recipes</h2>
       <p>These four dishes teach the fundamental techniques used in most Indian cooking.</p>
     </div>
+    <div id="featured-spotlight"></div>
     <div class="card-grid" id="featured-recipes"></div>
     <div class="text-center mt-32">
       <a href="recipes.html" class="btn btn-primary">View All 18 Recipes →</a>
     </div>
+  </div>
+</section>
+
+<!-- ── Photo CTA band ── -->
+<section class="cta-band">
+  <img class="cta-band-bg" src="images/recipes/butter-chicken.jpg" alt="" aria-hidden="true" loading="lazy">
+  <div class="cta-band-overlay"></div>
+  <div class="container">
+    <h2>Craving Butter Chicken Tonight?</h2>
+    <p>Velvety tomato-cream sauce, charred chicken, and the kasuri methi secret —
+       restaurant quality from your own kitchen in under an hour.</p>
+    <a href="recipe.html?id=butter-chicken" class="btn btn-primary">Cook Butter Chicken →</a>
   </div>
 </section>
 
@@ -206,9 +219,32 @@
 <script src="js/app.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    const FEATURED_IDS = ['dal-tadka', 'butter-chicken', 'palak-paneer', 'chana-masala'];
+    const SPOTLIGHT_ID = 'dal-tadka';
+    const FEATURED_IDS = ['butter-chicken', 'palak-paneer', 'chana-masala'];
     const container = document.getElementById('featured-recipes');
     if (!container || !window.RECIPES_DATA) return;
+
+    const spotlightEl = document.getElementById('featured-spotlight');
+    const spotlight = window.RECIPES_DATA.find(r => r.id === SPOTLIGHT_ID);
+    if (spotlightEl && spotlight) {
+      spotlightEl.innerHTML = `
+        <a class="spotlight-card" href="recipe.html?id=${spotlight.id}">
+          <div class="spotlight-media" style="background:${spotlight.gradient}">
+            ${spotlight.image ? `<img src="${spotlight.image}" alt="${spotlight.name}">` : ''}
+          </div>
+          <div class="spotlight-body">
+            <span class="spotlight-label">★ The place to start</span>
+            <h3>${spotlight.name}</h3>
+            <p class="spotlight-desc">${spotlight.description}</p>
+            <div class="recipe-card-meta">
+              <span class="badge badge-${spotlight.difficulty.toLowerCase()}">${spotlight.difficulty}</span>
+              <span class="time-badge">⏱ ${spotlight.cookTime}</span>
+              <span class="time-badge">👤 Serves ${spotlight.servings}</span>
+            </div>
+            <span class="spotlight-cta">Start cooking →</span>
+          </div>
+        </a>`;
+    }
 
     const featured = FEATURED_IDS
       .map(id => window.RECIPES_DATA.find(r => r.id === id))
