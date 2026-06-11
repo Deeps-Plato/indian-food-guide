@@ -153,7 +153,7 @@ window.SPICES_DATA = [
     typicalAmount: '½–1 tsp for tempering',
     beginnerTip: 'Keep a lid nearby when popping mustard seeds — they jump out of the pan! Add them to hot oil, immediately cover with a lid slightly ajar, and wait until the popping slows. Don\'t walk away or they\'ll burn.',
     uses: ['South Indian curries', 'Dal', 'Tempering', 'Pickles', 'Raita'],
-    image: 'images/spices/mustard-seeds.png'
+    image: 'images/spices/mustard-seeds.jpg'
   },
   {
     id: 'fenugreek-seeds',

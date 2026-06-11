@@ -70,7 +70,7 @@ window.RECIPES_DATA = [
     ],
     serving: 'Serve with steamed basmati rice for a complete meal. Also wonderful with hot roti or naan. A side of mango pickle and a dollop of yogurt complete the meal.',
     spicesUsed: ['turmeric', 'cumin-seeds', 'asafoetida', 'red-chili-powder'],
-    image: 'images/recipes/dal-tadka.png'
+    image: 'images/recipes/dal-tadka.jpg'
   },
   {
     id: 'palak-paneer',

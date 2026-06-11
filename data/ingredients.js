@@ -90,7 +90,7 @@ window.INGREDIENTS_DATA = [
     beginnerTip: 'The easiest dal to start with — no soaking needed, cooks fast, and is forgiving. Rinse and simmer with water, turmeric, and salt for 20 minutes. Then add a tempering (tadka) of ghee, cumin, and spices. Done!',
     storage: 'Dried lasts indefinitely. Cooked refrigerates 3–4 days.',
     substitute: 'Red lentils (same thing) — widely available',
-    image: 'images/ingredients/masoor-dal.png'
+    image: 'images/ingredients/masoor-dal.jpg'
   },
   {
     id: 'urad-dal',
