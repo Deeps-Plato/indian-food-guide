@@ -108,10 +108,21 @@ document.addEventListener('DOMContentLoaded', () => {
     tasteEl.textContent = recipe.whatItTastes;
   }
 
-  /* ── Ingredients ── */
+  /* ── Cooking progress (persisted per recipe in localStorage) ── */
+  const storageKey = `ifg-progress-${recipe.id}`;
+  const loadProgress = () => {
+    try { return JSON.parse(localStorage.getItem(storageKey)) || { ing: [], steps: [] }; }
+    catch { return { ing: [], steps: [] }; }
+  };
+  const saveProgress = p => {
+    try { localStorage.setItem(storageKey, JSON.stringify(p)); } catch { /* private mode */ }
+  };
+  const progress = loadProgress();
+
+  /* ── Ingredients (checkable) ── */
   const ingEl = document.getElementById('ingredients-list');
   if (ingEl) {
-    ingEl.innerHTML = recipe.ingredients.map(ing => {
+    ingEl.innerHTML = recipe.ingredients.map((ing, i) => {
       if (ing.item.startsWith('—')) {
         return `<div style="font-size:0.72rem;font-weight:700;text-transform:uppercase;
                      letter-spacing:0.08em;color:var(--saffron);padding:8px 0 2px;
@@ -119,28 +130,85 @@ document.addEventListener('DOMContentLoaded', () => {
                   ${ing.item.replace(/^— /, '').replace(/ —$/, '')}
                 </div>`;
       }
+      const checked = progress.ing.includes(i);
       return `
-        <div class="ingredient-item">
+        <label class="ingredient-item${checked ? ' checked' : ''}" data-index="${i}">
+          <input type="checkbox"${checked ? ' checked' : ''} aria-label="Mark ${ing.item} as gathered">
           <span class="ingredient-amount">${ing.amount}</span>
           <span>
             <div class="ingredient-name">${ing.item}</div>
             ${ing.note ? `<div class="ingredient-note">${ing.note}</div>` : ''}
           </span>
-        </div>`;
+        </label>`;
     }).join('');
+
+    ingEl.addEventListener('change', e => {
+      const label = e.target.closest('.ingredient-item');
+      if (!label) return;
+      const idx = parseInt(label.dataset.index, 10);
+      label.classList.toggle('checked', e.target.checked);
+      progress.ing = e.target.checked
+        ? [...new Set([...progress.ing, idx])]
+        : progress.ing.filter(n => n !== idx);
+      saveProgress(progress);
+    });
   }
 
-  /* ── Steps ── */
+  /* ── Steps (tap the number to mark done) ── */
   const stepsEl = document.getElementById('steps-list');
+  const updateStepProgress = () => {
+    const fill = document.querySelector('.cook-progress-fill');
+    const text = document.querySelector('.cook-progress-text');
+    const total = recipe.steps.length;
+    const done  = progress.steps.length;
+    if (fill) fill.style.width = `${total ? (done / total) * 100 : 0}%`;
+    if (text) text.textContent = done === total ? '🎉 All done!' : `${done} of ${total} steps`;
+  };
+
   if (stepsEl) {
     stepsEl.innerHTML = recipe.steps.map(s => `
-      <div class="step-item">
-        <div class="step-number">${s.step}</div>
+      <div class="step-item${progress.steps.includes(s.step) ? ' done' : ''}" data-step="${s.step}">
+        <div class="step-number" title="Tap to mark step done" role="button" tabindex="0"
+             aria-label="Mark step ${s.step} done"><span>${s.step}</span></div>
         <div>
           <div class="step-title">${s.title}</div>
           <div class="step-instruction">${s.instruction}</div>
         </div>
       </div>`).join('');
+
+    const toggleStep = numEl => {
+      const item = numEl.closest('.step-item');
+      const n = parseInt(item.dataset.step, 10);
+      const done = item.classList.toggle('done');
+      progress.steps = done
+        ? [...new Set([...progress.steps, n])]
+        : progress.steps.filter(x => x !== n);
+      saveProgress(progress);
+      updateStepProgress();
+    };
+    stepsEl.addEventListener('click', e => {
+      const numEl = e.target.closest('.step-number');
+      if (numEl) toggleStep(numEl);
+    });
+    stepsEl.addEventListener('keydown', e => {
+      const numEl = e.target.closest('.step-number');
+      if (numEl && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); toggleStep(numEl); }
+    });
+
+    const resetBtn = document.querySelector('.cook-progress-reset');
+    if (resetBtn) {
+      resetBtn.addEventListener('click', () => {
+        progress.ing = []; progress.steps = [];
+        saveProgress(progress);
+        document.querySelectorAll('.ingredient-item.checked').forEach(el => {
+          el.classList.remove('checked');
+          const cb = el.querySelector('input'); if (cb) cb.checked = false;
+        });
+        document.querySelectorAll('.step-item.done').forEach(el => el.classList.remove('done'));
+        updateStepProgress();
+      });
+    }
+    updateStepProgress();
   }
 
   /* ── Tips ── */

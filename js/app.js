@@ -96,5 +96,30 @@ function setResultsCount(el, count, total, noun) {
     : `${count} of ${total} ${noun}${total !== 1 ? 's' : ''}`;
 }
 
+/* ── Scroll reveal ── */
+function initReveal() {
+  if (!('IntersectionObserver' in window)) return;
+  const targets = document.querySelectorAll(
+    '.recipe-card, .spice-card, .tip-card, .how-step, .pantry-item'
+  );
+  if (!targets.length) return;
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('revealed');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -24px 0px' });
+  targets.forEach(el => {
+    el.classList.add('reveal');
+    observer.observe(el);
+  });
+}
+
 /* ── Run on DOM ready ── */
-document.addEventListener('DOMContentLoaded', initNav);
+document.addEventListener('DOMContentLoaded', () => {
+  initNav();
+  /* defer so page scripts (later DOMContentLoaded listeners) render their cards first */
+  setTimeout(initReveal, 0);
+});
